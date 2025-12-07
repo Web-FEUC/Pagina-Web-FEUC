@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: feuc-website
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s dist -l $PORT
+    envVars:
+      - key: NODE_VERSION
+        value: 18.x.0
+    staticPublishPath: ./dist
+    healthCheckPath: /
+
