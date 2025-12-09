@@ -1,0 +1,39 @@
+/*
+  Cache-Control: public, max-age=0, must-revalidate
+
+/assets/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*.jpg
+  Cache-Control: public, max-age=604800
+
+/assets/*.JPG
+  Cache-Control: public, max-age=604800
+
+/assets/*.jpeg
+  Cache-Control: public, max-age=604800
+
+/assets/*.JPEG
+  Cache-Control: public, max-age=604800
+
+/assets/*.png
+  Cache-Control: public, max-age=604800
+
+/assets/*.PNG
+  Cache-Control: public, max-age=604800
+
+/assets/*.svg
+  Cache-Control: public, max-age=604800
+
+/assets/*.SVG
+  Cache-Control: public, max-age=604800
+
+/assets/*.webp
+  Cache-Control: public, max-age=604800
+
+/assets/*.gif
+  Cache-Control: public, max-age=604800
+

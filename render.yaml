@@ -1,5 +1,0 @@
-static_sites:
-  - name: feuc-website
-    buildCommand: npm install && npm run build
-    publishPath: ./dist
-
