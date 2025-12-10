@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { navLinks, socialLinks, offices } from '../data/constants'
 
@@ -9,6 +9,23 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   const location = useLocation()
   const [isCSDropdownOpen, setIsCSDropdownOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsCSDropdownOpen(false)
+      }
+    }
+
+    if (isCSDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isCSDropdownOpen])
 
   return (
     <div className="min-h-screen text-ink">
@@ -35,12 +52,16 @@ export default function Layout({ children }: LayoutProps) {
               </Link>
             ))}
             <div
+              ref={dropdownRef}
               className="relative"
               onMouseEnter={() => setIsCSDropdownOpen(true)}
               onMouseLeave={() => setIsCSDropdownOpen(false)}
             >
               <button
+                onClick={() => setIsCSDropdownOpen(!isCSDropdownOpen)}
                 className={`transition hover:text-primary ${location.pathname === '/consejeria-superior' ? 'text-primary' : ''}`}
+                aria-expanded={isCSDropdownOpen}
+                aria-haspopup="true"
               >
                 CS
               </button>
