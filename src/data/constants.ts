@@ -26,6 +26,14 @@ export const directiva = [
   { name: 'Antonia Rebolledo', role: 'Secretaria General', area: 'Derecho', photo: '/assets/antonia_rebolledo.JPG' },
   { name: 'Arantzazu Larraguibel', role: '1° Secretaria Ejecutiva', area: 'Diseño', photo: '/assets/zazu.JPG' },
   { name: 'Ethiel Barrientos', role: '2° Secretaria Ejecutiva', area: 'Kinesiología', photo: '/assets/ethiel_barrientos.JPG' },
+  { name: 'Maite Etchegaray', role: 'Coordinadora General', area: '', photo: '/assets/maite_etchegaray.JPG' },
+  { name: 'Gabriel Cáceres', role: 'Coordinador General', area: '', photo: '/assets/gabriel_caceres.JPG' },
+  { name: 'Javier Castro', role: 'Coordinador General', area: '', photo: '/assets/javier_castro.JPG' },
+  { name: 'Blanca Yaconi', role: 'Coordinadora General', area: '', photo: '/assets/blanca_yaconi.JPG' },
+  { name: 'Trini Farías', role: 'Coordinadora General', area: '', photo: '/assets/trini_farias.JPG' },
+  { name: 'Gabriel Nahuelcoy', role: 'Coordinador General', area: '', photo: '/assets/gabriel_nahuelcoy.JPG' },
+  { name: 'Lucas Ituarte', role: 'Coordinador General', area: '', photo: '/assets/lucas_ituarte.JPG' },
+  { name: 'Valentina Saldaña', role: 'Coordinadora General', area: '', photo: '/assets/valentina_saldana.JPG' },
 ]
 
 export const consejeriaSuperior = [
@@ -81,7 +89,7 @@ export const territories = [
     name: 'Ciencias Exactas',
     centers: [
       { name: 'Licenciatura en Ingeniería en Ciencia de Datos', president: '(Vacante)' },
-      { name: 'Centro de Estudiantes Facultad de Física (CEFF)', president: 'Exequiel Manríques (SURG)' },
+      { name: 'Centro de Estudiantes Facultad de Física (CEFF)', president: 'Exequiel Manríques' },
       { name: 'Centro de Estudiantes Facultad de Matemáticas (CEFMAT)', president: '' },
     ],
     counselors: [{ name: 'Joaquín Honores', movement: 'SURG' }, { name: 'Daniel Guevara', movement: 'JJCC-UC' }],
@@ -89,7 +97,7 @@ export const territories = [
   {
     name: 'College',
     centers: [
-      { name: 'Centro de Estudiantes de College (CECO)', president: 'Tomás Cádiz (MG)' },
+      { name: 'Centro de Estudiantes de College (CECO)', president: 'Tomás Cádiz' },
     ],
     counselors: [{ name: 'Emiliano Vergara', movement: 'MG' }, { name: 'Fernanda de la Barra', movement: 'NAU!' }, { name: 'Consuelo Radrigán', movement: 'SDD' }],
   },
@@ -103,7 +111,7 @@ export const territories = [
   {
     name: 'Construcción Civil',
     centers: [
-      { name: 'Centro de Estudiantes Construcción Civil (CECC)', president: 'Juan Quintana (MG)' },
+      { name: 'Centro de Estudiantes Construcción Civil (CECC)', president: 'Juan Quintana' },
     ],
     counselors: [{ name: 'Pablo Suazo', movement: 'MG' }],
   },
@@ -117,9 +125,9 @@ export const territories = [
   {
     name: 'Educación',
     centers: [
-      { name: 'Centro de Estudiantes de Pedagogía General Básica (CEPe)', president: 'Martín Vásquez (FA-UC)' },
-      { name: 'Centros de Estudiantes de Pedagogía en Educación Media y PFP (CEPEM)', president: 'Cristóbal Santander (NAU!)' },
-      { name: 'Centro de Estudiantes de Pedagogía en Educación Parvularia (CEPEP)', president: 'Constanza Rojas (SURG)' },
+      { name: 'Centro de Estudiantes de Pedagogía General Básica (CEPe)', president: 'Martín Vásquez' },
+      { name: 'Centros de Estudiantes de Pedagogía en Educación Media y PFP (CEPEM)', president: 'Cristóbal Santander' },
+      { name: 'Centro de Estudiantes de Pedagogía en Educación Parvularia (CEPEP)', president: 'Constanza Rojas' },
       { name: 'Pedagogía en Educación Especial', president: '' },
       { name: 'Centro de estudiantes de Pedagogía en Educación Fisica y Salud (CEEFI)', president: 'Florencia González' },
       { name: 'Centro de Estudiantes de Pedagogía en Inglés (CEPI)', president: 'Ariel Díaz' },
@@ -143,11 +151,11 @@ export const territories = [
   {
     name: 'Humanidades',
     centers: [
-      { name: 'Centro de Estudiantes Ciencia Política (CECIP)', president: 'Valentina Figueroa (SURG)' },
+      { name: 'Centro de Estudiantes Ciencia Política (CECIP)', president: 'Valentina Figueroa' },
       { name: 'Centro de Estudiantes de Filosofía (CEF)', president: 'Benjamín Novoa' },
       { name: 'Centro de Estudiantes Geografía (CEG)', president: 'Sofía Durán' },
-      { name: 'Centro de Estudiantes Historia (CEHi)', president: 'Monserrat Chandía (FA-UC)' },
-      { name: 'Centro de Estudiantes de Letras (CEL)', president: 'María Ignacia Hernández (NAU!)' },
+      { name: 'Centro de Estudiantes Historia (CEHi)', president: 'Monserrat Chandía' },
+      { name: 'Centro de Estudiantes de Letras (CEL)', president: 'María Ignacia Hernández' },
     ],
     counselors: [{ name: 'Laura Ortega', movement: 'BUS-UC' }, { name: 'Josué Medina', movement: 'NAU!' }],
   },
@@ -168,7 +176,7 @@ export const territories = [
   {
     name: 'Lo Contador',
     centers: [
-      { name: 'Centro de Estudiantes Arquitectura (CEARQ)', president: 'Montserrat Cabrera (NAU!)' },
+      { name: 'Centro de Estudiantes Arquitectura (CEARQ)', president: 'Montserrat Cabrera' },
       { name: 'Centro de Estudiantes Diseño (CED)', president: 'Mili Martinez' },
       { name: 'Estudios Urbanos', president: '' },
     ],
@@ -208,14 +216,14 @@ export const territories = [
   {
     name: 'Química',
     centers: [
-      { name: 'Centro de Estudiantes de Química y de Farmacia (CEQUIF)', president: 'Emilio Toloza (NAU!)' },
+      { name: 'Centro de Estudiantes de Química y de Farmacia (CEQUIF)', president: 'Emilio Toloza' },
     ],
     counselors: [{ name: 'Benjamín Méndez', movement: 'SURG' }],
   },
   {
     name: 'Sociales y Teología',
     centers: [
-      { name: 'Centro de Estudiantes Antropología y Arqueología (CEANARQ)', president: 'Constanza De la Fuente (JJCC-UC)' },
+      { name: 'Centro de Estudiantes Antropología y Arqueología (CEANARQ)', president: 'Constanza De la Fuente' },
       { name: 'Centro de Estudiantes de Sociología (CESO)', president: 'Camila Arancibia' },
       { name: 'Centro de Estudiantes de Teología (CET)', president: 'Vicente Lermanda' },
       { name: 'Centro de Estudiantes de Trabajo Social (CETS)', president: 'Ágata Ruz' },
