@@ -11,7 +11,7 @@ export default function Actas() {
 
       <div className="grid gap-6 md:grid-cols-2">
         <a
-          href="https://uccl0-my.sharepoint.com/:f:/r/personal/antonia_rebolledo_uc_cl/Documents/CONSEJOS/COFEUC?csf=1&web=1&e=S22eHl"
+          href="https://uccl0-my.sharepoint.com/:f:/r/personal/antonia_rebolledo_uc_cl/Documents/CONSEJOS/COFEUC?csf=1&web=1&e=lydr61"
           target="_blank"
           rel="noreferrer"
           className="group rounded-2xl bg-white p-8 shadow-card transition hover:-translate-y-1 hover:shadow-xl"
@@ -31,7 +31,7 @@ export default function Actas() {
         </a>
 
         <a
-          href="https://uccl0-my.sharepoint.com/:f:/r/personal/antonia_rebolledo_uc_cl/Documents/CONSEJOS/EJECUTIVO?csf=1&web=1&e=AStkpY"
+          href="https://uccl0-my.sharepoint.com/:f:/r/personal/antonia_rebolledo_uc_cl/Documents/CONSEJOS/EJECUTIVO?csf=1&web=1&e=Kxorjl"
           target="_blank"
           rel="noreferrer"
           className="group rounded-2xl bg-white p-8 shadow-card transition hover:-translate-y-1 hover:shadow-xl"
