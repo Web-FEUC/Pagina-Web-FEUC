@@ -8,6 +8,7 @@ import Representacion from './pages/Representacion'
 import Archivo from './pages/Archivo'
 import Contacto from './pages/Contacto'
 import Privacidad from './pages/Privacidad'
+import Actas from './pages/Actas'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/directiva" element={<Directiva />} />
         <Route path="/quienes-somos" element={<QuienesSomos />} />
         <Route path="/transparencia" element={<Transparencia />} />
+        <Route path="/actas" element={<Actas />} />
         <Route path="/representacion" element={<Representacion />} />
         <Route path="/archivo" element={<Archivo />} />
         <Route path="/contacto" element={<Contacto />} />

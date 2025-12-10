@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Transparencia() {
   return (
     <section className="py-12">
@@ -17,9 +19,9 @@ export default function Transparencia() {
           </div>
           <h3 className="text-lg font-semibold text-ink">Actas del Consejo</h3>
           <p className="mt-2 text-sm text-slate-600">Sesiones abiertas y actas públicas del Consejo de Federación.</p>
-          <a href="#" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+          <Link to="/actas" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
             Ver actas →
-          </a>
+          </Link>
         </div>
         <div className="rounded-2xl bg-white p-6 shadow-card">
           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
