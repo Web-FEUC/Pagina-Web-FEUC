@@ -3,18 +3,18 @@ import { directiva } from '../data/constants'
 
 export default function Directiva() {
   return (
-    <section className="py-12">
-      <div className="mb-6 flex items-center justify-between">
+    <section className="py-8 md:py-12">
+      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Directiva FEUC 2026</p>
-          <h2 className="text-2xl font-semibold text-ink">Directiva FEUC</h2>
+          <h2 className="text-xl md:text-2xl font-semibold text-ink">Directiva FEUC</h2>
           <p className="text-sm text-slate-600">Representación electa por votación universal de estudiantes.</p>
         </div>
-        <Link to="/representacion" className="text-sm font-semibold text-primary hover:underline">
+        <Link to="/representacion" className="text-sm font-semibold text-primary hover:underline whitespace-nowrap">
           Ver representación completa
         </Link>
       </div>
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
         {directiva.map((member) => (
           <div key={member.name} className="overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1 hover:shadow-xl">
             <div className="relative h-64 w-full overflow-hidden bg-slate-100">

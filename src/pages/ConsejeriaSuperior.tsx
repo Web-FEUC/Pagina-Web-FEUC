@@ -2,13 +2,13 @@ import { consejeriaSuperior } from '../data/constants'
 
 export default function ConsejeriaSuperior() {
   return (
-    <section className="py-12">
+    <section className="py-8 md:py-12">
       <div className="mb-6">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Consejería Superior FEUC 2026</p>
-        <h2 className="text-2xl font-semibold text-ink">Consejería Superior</h2>
+        <h2 className="text-xl md:text-2xl font-semibold text-ink">Consejería Superior</h2>
         <p className="text-sm text-slate-600">Representación en el Consejo Superior de la Universidad.</p>
       </div>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-2">
         {consejeriaSuperior.map((member) => (
           <div key={member.name} className="overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1 hover:shadow-xl">
             <div className="relative h-64 w-full overflow-hidden bg-slate-100">
