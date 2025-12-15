@@ -5,7 +5,7 @@ const beneficios = [
   {
     title: 'Descuento Flixbus',
     description: 'Descuentos especiales para estudiantes UC en viajes en bus.',
-    link: 'https://www.flixbus.cl',
+    link: 'https://www.hiphiphour.com/77ae13c817cbc332e855',
     icon: '🚌',
   },
   {
