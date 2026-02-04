@@ -45,11 +45,8 @@ export default function Privacidad() {
 
         <div className="rounded-2xl bg-white p-6 shadow-card">
           <h3 className="mb-3 text-lg font-semibold text-ink">¿Cómo ejercer mis derechos?</h3>
-          <p className="mb-3 text-sm text-slate-700">
-            Debes comunicarte con el Vicepresidente de la FEUC, cuyo mail es cfernandez19@uc.cl. El derecho sólo podrá ser ejercido por el propio titular.
-          </p>
           <p className="text-sm text-slate-700">
-            Para más información, puedes revisar la web <a href="https://feuc.cl" className="text-primary hover:underline">https://feuc.cl</a> o comunicarte por medio del WhatsApp de la FEUC, disponible en el Instagram feuc.cl.
+            Debes comunicarte con el Vicepresidente de la FEUC, cuyo mail es juan.aguero@uc.cl. El derecho sólo podrá ser ejercido por el propio titular.
           </p>
         </div>
       </div>
