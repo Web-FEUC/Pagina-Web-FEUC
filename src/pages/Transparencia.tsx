@@ -31,7 +31,7 @@ export default function Transparencia() {
           </div>
           <h3 className="text-lg font-semibold text-ink">Rendición de cuentas</h3>
           <p className="mt-2 text-sm text-slate-600">Informes mensuales y rendiciones financieras públicas.</p>
-          <a href="#" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+          <a href="https://uccl0.sharepoint.com/:x:/s/uc365_FEUC2026/IQCd-C1OrGXvSZU396nlVm7YATUle2OTYHXnUuy-UfDWBJs?e=R0Ph1k" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
             Ver informes →
           </a>
         </div>
