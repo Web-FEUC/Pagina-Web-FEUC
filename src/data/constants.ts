@@ -2,6 +2,7 @@ export const navLinks = [
   { label: 'Directiva', path: '/directiva' },
   { label: 'Quiénes Somos', path: '/quienes-somos' },
   { label: 'Transparencia', path: '/transparencia' },
+  { label: 'Becas FEUC - CS', path: '/becas-feuc-cs' },
   { label: 'Representación', path: '/representacion' },
   { label: 'Archivo FEUC', path: '/archivo' },
   { label: 'Contacto', path: '/contacto' },

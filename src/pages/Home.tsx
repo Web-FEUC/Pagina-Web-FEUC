@@ -11,7 +11,7 @@ const beneficios = [
   {
     title: 'Becas FEUC',
     description: 'Becas de alimentación, materiales y apoyo económico.',
-    link: '#',
+    link: '/becas-feuc-cs',
     icon: '💰',
   },
   {
@@ -35,14 +35,16 @@ export default function Home() {
         className="relative isolate min-h-[50vh] overflow-hidden rounded-3xl bg-cover bg-center shadow-card"
         style={{ backgroundImage: 'url(/casa-central-universidad.jpg)' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/55 via-primary/35 to-secondary/35" />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/70 via-primary/45 to-coral/40" />
         <div className="absolute inset-0 bg-black/12 mix-blend-multiply" />
         <div className="relative flex min-h-[50vh] flex-col items-center justify-center px-6 py-12 text-center">
-          <img 
-            src="/assets/logo_feuc_blanco.svg" 
-            alt="Logo FEUC" 
-            className="mb-6 h-24 w-auto md:h-32" 
-          />
+          <div className="mb-6 rounded-2xl bg-white/95 p-3 shadow-xl">
+            <img
+              src="/assets/logo_feuc_nuevo.svg"
+              alt="Logo FEUC"
+              className="h-14 w-auto md:h-20"
+            />
+          </div>
           <h1 className="text-2xl font-semibold text-white drop-shadow-lg md:text-3xl">
             Federación de Estudiantes de la<br />
             Pontificia Universidad Católica de Chile

@@ -26,6 +26,18 @@ export default function Transparencia() {
         <div className="rounded-2xl bg-white p-6 shadow-card">
           <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
             <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-2.761 0-5 2.239-5 5v5h10v-5c0-2.761-2.239-5-5-5zM9 8V6a3 3 0 116 0v2" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-semibold text-ink">Becas FEUC - CS</h3>
+          <p className="mt-2 text-sm text-slate-600">Bases y formulario de postulacion para las becas FEUC - CS.</p>
+          <Link to="/becas-feuc-cs" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+            Ir a becas →
+          </Link>
+        </div>
+        <div className="rounded-2xl bg-white p-6 shadow-card">
+          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+            <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
             </svg>
           </div>

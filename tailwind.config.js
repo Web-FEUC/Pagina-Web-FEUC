@@ -10,9 +10,11 @@ export default {
         sans: ['Outfit', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       colors: {
-        primary: '#67C3B6',
-        secondary: '#0B3B79',
-        accent: '#F6D572',
+        primary: '#8DE09C',
+        secondary: '#053333',
+        accent: '#FCC216',
+        coral: '#E5562A',
+        blue: '#0437EA',
         ink: '#0F172A',
       },
       boxShadow: {

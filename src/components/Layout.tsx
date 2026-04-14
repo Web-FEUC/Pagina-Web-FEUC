@@ -34,26 +34,28 @@ export default function Layout({ children }: LayoutProps) {
 
   return (
     <div className="min-h-screen text-ink">
-      <div className="relative overflow-hidden bg-gradient-to-b from-white via-white to-slate-50">
+      <div className="relative overflow-hidden bg-gradient-to-b from-[#f7fcf8] via-white to-[#eef8f1]">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-[-10%] top-[-5%] h-72 w-72 rounded-full bg-primary/20 blur-3xl" />
-          <div className="absolute right-[-10%] top-1/3 h-96 w-96 rounded-full bg-secondary/15 blur-3xl" />
+          <div className="absolute left-[-10%] top-[-5%] h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
+          <div className="absolute right-[-10%] top-1/3 h-96 w-96 rounded-full bg-coral/20 blur-3xl" />
         </div>
 
         <header className="relative z-20 mx-auto max-w-6xl px-4 py-4 md:px-6 md:py-5">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2 md:gap-3" onClick={() => setIsMobileMenuOpen(false)}>
-              <img src="/assets/logo_feuc.svg" alt="Logo FEUC" className="h-9 w-auto md:h-12" />
+              <img src="/assets/logo_feuc_nuevo.svg" alt="Logo FEUC" className="h-8 w-auto md:h-10" />
               <p className="text-xs md:text-sm font-medium text-ink hidden sm:block">Federación de Estudiantes UC</p>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
+            <nav className="hidden items-center gap-2 rounded-full border border-primary/35 bg-white/90 px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm md:flex">
               {navLinks.map((item) => (
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`transition hover:text-primary ${location.pathname === item.path ? 'text-primary' : ''}`}
+                  className={`rounded-full px-3 py-1.5 transition hover:bg-primary/15 hover:text-secondary ${
+                    location.pathname === item.path ? 'bg-primary/20 text-secondary' : ''
+                  }`}
                 >
                   {item.label}
                 </Link>
@@ -66,13 +68,15 @@ export default function Layout({ children }: LayoutProps) {
               >
                 <Link
                   to="/consejeria-superior"
-                  className={`transition hover:text-primary ${location.pathname === '/consejeria-superior' ? 'text-primary' : ''}`}
+                  className={`rounded-full px-3 py-1.5 transition hover:bg-primary/15 hover:text-secondary ${
+                    location.pathname === '/consejeria-superior' ? 'bg-primary/20 text-secondary' : ''
+                  }`}
                   onClick={() => setIsCSDropdownOpen(false)}
                 >
                   CS
                 </Link>
                 {isCSDropdownOpen && (
-                  <div className="absolute left-0 top-full mt-2 w-48 rounded-lg bg-white shadow-lg border border-slate-200 py-2 z-50">
+                  <div className="absolute left-0 top-full z-50 mt-2 w-48 rounded-lg border border-primary/20 bg-white shadow-lg py-2">
                     <Link
                       to="/consejeria-superior"
                       className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 hover:text-primary transition"
@@ -118,7 +122,7 @@ export default function Layout({ children }: LayoutProps) {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 text-slate-700 hover:text-primary transition"
+              className="md:hidden rounded-full border border-primary/30 bg-white/90 p-2 text-slate-700 transition hover:text-secondary"
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -138,17 +142,17 @@ export default function Layout({ children }: LayoutProps) {
           {isMobileMenuOpen && (
             <div
               ref={mobileMenuRef}
-              className="md:hidden mt-4 pb-4 border-t border-slate-200 pt-4"
+              className="mt-4 border-t border-primary/25 pb-4 pt-4 md:hidden"
             >
               <nav className="flex flex-col gap-4">
                 {navLinks.map((item) => (
                   <Link
                     key={item.label}
                     to={item.path}
-                    className={`text-base font-semibold py-2 transition ${
+                    className={`rounded-xl px-3 py-2 text-base font-semibold transition ${
                       location.pathname === item.path
-                        ? 'text-primary'
-                        : 'text-slate-700 hover:text-primary'
+                        ? 'bg-primary/20 text-secondary'
+                        : 'text-slate-700 hover:bg-primary/15 hover:text-secondary'
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -157,10 +161,10 @@ export default function Layout({ children }: LayoutProps) {
                 ))}
                 <Link
                   to="/consejeria-superior"
-                  className={`text-base font-semibold py-2 transition ${
+                  className={`rounded-xl px-3 py-2 text-base font-semibold transition ${
                     location.pathname === '/consejeria-superior'
-                      ? 'text-primary'
-                      : 'text-slate-700 hover:text-primary'
+                      ? 'bg-primary/20 text-secondary'
+                      : 'text-slate-700 hover:bg-primary/15 hover:text-secondary'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -203,7 +207,7 @@ export default function Layout({ children }: LayoutProps) {
           {children}
         </main>
 
-        <footer className="border-t border-slate-100 bg-white/90">
+        <footer className="border-t border-primary/30 bg-white/95">
           <div className="mx-auto max-w-6xl px-4 md:px-6 py-6 md:py-8">
             <div className="mb-6 md:mb-8 grid gap-6 md:gap-8 md:grid-cols-2">
               <div>
@@ -265,7 +269,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <div className="border-t border-slate-200 pt-6 text-center text-xs text-slate-500">
-              <p>© 2025 Federación de Estudiantes Universidad Católica de Chile</p>
+              <p>© 2026 Federación de Estudiantes Universidad Católica de Chile</p>
             </div>
           </div>
         </footer>
