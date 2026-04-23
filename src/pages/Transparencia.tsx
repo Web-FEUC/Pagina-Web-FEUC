@@ -55,8 +55,20 @@ export default function Transparencia() {
           </div>
           <h3 className="text-lg font-semibold text-ink">Estatutos y documentos</h3>
           <p className="mt-2 text-sm text-slate-600">Estatutos FEUC, reglamentos y documentos oficiales.</p>
-          <a href="#" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+          <a href="https://uccl0.sharepoint.com/:b:/s/uc365_FEUC2026/IQAVRtHbLjLzToViYXyvKydoAfd6UYuUkBBPfpmf-5Q42EE?e=JMc7nZ" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
             Ver documentos →
+          </a>
+        </div>
+        <div className="rounded-2xl bg-white p-6 shadow-card">
+          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+            <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5V4H2v16h5m10 0v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6m10 0H7" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-semibold text-ink">Comisión de sub representación</h3>
+          <p className="mt-2 text-sm text-slate-600">Documentos oficiales de la Comisión de Subrepresentación.</p>
+          <a href="https://uccl0.sharepoint.com/:f:/s/uc365_ComisinSub-Representacin/IgBBC-Tgd2mnT5Q0G8ASyKTyAVBibeYaGPQiqTzrJhyXnNY?e=Zl5Lev" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+            Ir a comisión →
           </a>
         </div>
       </div>
