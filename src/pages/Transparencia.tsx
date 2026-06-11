@@ -55,7 +55,7 @@ export default function Transparencia() {
           </div>
           <h3 className="text-lg font-semibold text-ink">Estatutos y documentos</h3>
           <p className="mt-2 text-sm text-slate-600">Estatutos FEUC, reglamentos y documentos oficiales.</p>
-          <a href="https://uccl0.sharepoint.com/:b:/s/uc365_FEUC2026/IQAVRtHbLjLzToViYXyvKydoAfd6UYuUkBBPfpmf-5Q42EE?e=JMc7nZ" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+          <a href="https://drive.google.com/drive/folders/1miwSqRkFa6pIFO47IR3lizxoKvLXk-eT?usp=sharing" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
             Ver documentos →
           </a>
         </div>
