@@ -3,9 +3,9 @@ export const navLinks = [
   { label: 'Quiénes Somos', path: '/quienes-somos' },
   { label: 'Transparencia', path: '/transparencia' },
   { label: 'Cabildos', path: '/cabildos' },
-  { label: 'Becas FEUC - CS', path: '/becas-feuc-cs' },
+  { label: 'Becas', path: '/becas-feuc-cs' },
   { label: 'Representación', path: '/representacion' },
-  { label: 'Archivo FEUC', path: '/archivo' },
+  { label: 'Archivo', path: '/archivo' },
   { label: 'Contacto', path: '/contacto' },
 ]
 

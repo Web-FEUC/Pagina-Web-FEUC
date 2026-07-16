@@ -40,20 +40,24 @@ export default function Layout({ children }: LayoutProps) {
           <div className="absolute right-[-10%] top-1/3 h-96 w-96 rounded-full bg-coral/20 blur-3xl" />
         </div>
 
-        <header className="relative z-20 mx-auto max-w-6xl px-4 py-4 md:px-6 md:py-5">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2 md:gap-3" onClick={() => setIsMobileMenuOpen(false)}>
-              <img src="/assets/logo_feuc_nuevo.svg" alt="Logo FEUC" className="h-8 w-auto md:h-10" />
-              <p className="text-xs md:text-sm font-medium text-ink hidden sm:block">Federación de Estudiantes UC</p>
+        <header className="relative z-20 mx-auto max-w-7xl px-4 py-3 md:px-5 md:py-4">
+          <div className="flex items-center justify-between gap-3">
+            <Link
+              to="/"
+              className="flex min-w-0 shrink-0 items-center gap-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <img src="/assets/logo_feuc_nuevo.svg" alt="Logo FEUC" className="h-8 w-auto shrink-0 lg:h-9" />
+              <p className="hidden text-xs font-medium text-ink xl:block">Federación de Estudiantes UC</p>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center gap-2 rounded-full border border-primary/35 bg-white/90 px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm md:flex">
+            <nav className="hidden min-w-0 flex-1 items-center justify-center gap-0.5 rounded-full border border-primary/35 bg-white/90 px-1.5 py-1 text-[11px] font-semibold leading-tight text-slate-700 shadow-sm lg:flex xl:gap-1 xl:px-2 xl:text-xs">
               {navLinks.map((item) => (
                 <Link
                   key={item.label}
                   to={item.path}
-                  className={`rounded-full px-3 py-1.5 transition hover:bg-primary/15 hover:text-secondary ${
+                  className={`whitespace-nowrap rounded-full px-2 py-1.5 transition hover:bg-primary/15 hover:text-secondary xl:px-2.5 ${
                     location.pathname === item.path ? 'bg-primary/20 text-secondary' : ''
                   }`}
                 >
@@ -68,7 +72,7 @@ export default function Layout({ children }: LayoutProps) {
               >
                 <Link
                   to="/consejeria-superior"
-                  className={`rounded-full px-3 py-1.5 transition hover:bg-primary/15 hover:text-secondary ${
+                  className={`whitespace-nowrap rounded-full px-2 py-1.5 transition hover:bg-primary/15 hover:text-secondary xl:px-2.5 ${
                     location.pathname === '/consejeria-superior' ? 'bg-primary/20 text-secondary' : ''
                   }`}
                   onClick={() => setIsCSDropdownOpen(false)}
@@ -90,7 +94,7 @@ export default function Layout({ children }: LayoutProps) {
             </nav>
 
             {/* Desktop Social Links */}
-            <div className="hidden items-center gap-4 md:flex">
+            <div className="hidden shrink-0 items-center gap-3 xl:flex">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -119,10 +123,10 @@ export default function Layout({ children }: LayoutProps) {
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile / tablet Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden rounded-full border border-primary/30 bg-white/90 p-2 text-slate-700 transition hover:text-secondary"
+              className="rounded-full border border-primary/30 bg-white/90 p-2 text-slate-700 transition hover:text-secondary lg:hidden"
               aria-label="Toggle menu"
               aria-expanded={isMobileMenuOpen}
             >
@@ -142,7 +146,7 @@ export default function Layout({ children }: LayoutProps) {
           {isMobileMenuOpen && (
             <div
               ref={mobileMenuRef}
-              className="mt-4 border-t border-primary/25 pb-4 pt-4 md:hidden"
+              className="mt-4 border-t border-primary/25 pb-4 pt-4 lg:hidden"
             >
               <nav className="flex flex-col gap-4">
                 {navLinks.map((item) => (
