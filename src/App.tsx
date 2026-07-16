@@ -11,6 +11,7 @@ import Contacto from './pages/Contacto'
 import Privacidad from './pages/Privacidad'
 import Actas from './pages/Actas'
 import BecasFeucCs from './pages/BecasFeucCs'
+import Cabildos from './pages/Cabildos'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/transparencia" element={<Transparencia />} />
         <Route path="/actas" element={<Actas />} />
         <Route path="/becas-feuc-cs" element={<BecasFeucCs />} />
+        <Route path="/cabildos" element={<Cabildos />} />
         <Route path="/representacion" element={<Representacion />} />
         <Route path="/archivo" element={<Archivo />} />
         <Route path="/contacto" element={<Contacto />} />

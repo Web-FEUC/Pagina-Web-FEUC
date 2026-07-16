@@ -234,6 +234,8 @@ export default function Layout({ children }: LayoutProps) {
                 <div className="flex flex-wrap gap-3 md:gap-4 text-xs md:text-sm text-slate-600">
                   <Link to="/directiva" className="font-semibold text-primary hover:underline">Directiva</Link>
                   <Link to="/quienes-somos" className="font-semibold text-primary hover:underline">Quiénes Somos</Link>
+                  <Link to="/transparencia" className="font-semibold text-primary hover:underline">Transparencia</Link>
+                  <Link to="/cabildos" className="font-semibold text-primary hover:underline">Cabildos</Link>
                   <Link to="/representacion" className="font-semibold text-primary hover:underline">Representación</Link>
                   <Link to="/contacto" className="font-semibold text-primary hover:underline">Contacto</Link>
                   <Link to="/privacidad" className="font-semibold text-primary hover:underline">Política de Privacidad</Link>

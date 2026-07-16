@@ -71,6 +71,20 @@ export default function Transparencia() {
             Ir a comisión →
           </a>
         </div>
+        <div className="rounded-2xl bg-white p-6 shadow-card">
+          <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+            <svg className="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-semibold text-ink">Informe Cabildos 2026</h3>
+          <p className="mt-2 text-sm text-slate-600">
+            Sistematización territorial de los cabildos FEUC sobre el Proyecto de Ley de Reconstrucción Nacional.
+          </p>
+          <Link to="/cabildos" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
+            Ver informe →
+          </Link>
+        </div>
       </div>
     </section>
   )
