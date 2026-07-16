@@ -45,11 +45,11 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex items-center justify-between gap-4">
             <Link
               to="/"
-              className="flex shrink-0 items-center gap-2.5"
+              className="flex shrink-0 flex-col items-start gap-0.5"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <img src="/assets/logo_feuc_nuevo.svg" alt="Logo FEUC" className="h-9 w-auto shrink-0 md:h-10" />
-              <p className="hidden text-sm font-medium leading-snug text-ink sm:block">
+              <p className="hidden text-[10px] font-medium leading-none tracking-wide text-ink/70 sm:block md:text-[11px]">
                 Federación de Estudiantes UC
               </p>
             </Link>
