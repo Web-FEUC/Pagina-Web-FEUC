@@ -77,12 +77,12 @@ export default function Transparencia() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
             </svg>
           </div>
-          <h3 className="text-lg font-semibold text-ink">Informe Cabildos 2026</h3>
+          <h3 className="text-lg font-semibold text-ink">Informe Aprobado Cabildos 2026</h3>
           <p className="mt-2 text-sm text-slate-600">
-            Sistematización territorial de los cabildos FEUC sobre el Proyecto de Ley de Reconstrucción Nacional.
+            Sistematización territorial oficial de los cabildos FEUC sobre el Proyecto de Ley de Reconstrucción Nacional.
           </p>
           <Link to="/cabildos" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3">
-            Ver informe →
+            Ver informe aprobado →
           </Link>
         </div>
       </div>
