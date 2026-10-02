@@ -3,6 +3,7 @@ export const navLinks = [
   { label: 'Quiénes Somos', path: '/quienes-somos' },
   { label: 'Transparencia', path: '/transparencia' },
   { label: 'Cabildos', path: '/cabildos' },
+  { label: 'Presupuestos participativos', path: '/presupuestos-participativos' },
   { label: 'Becas', path: '/becas-feuc-cs' },
   { label: 'Representación', path: '/representacion' },
   { label: 'Archivo', path: '/archivo' },
