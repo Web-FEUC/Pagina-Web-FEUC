@@ -1,3 +1,9 @@
+/** Enlaces de los canales de difusión de Empleos FEUC. */
+export const EMPLEOS_TELEGRAM_URL =
+  import.meta.env.VITE_EMPLEOS_TELEGRAM_URL || 'https://t.me/empleosfeuc'
+export const EMPLEOS_WHATSAPP_URL =
+  import.meta.env.VITE_EMPLEOS_WHATSAPP_URL || 'https://chat.whatsapp.com/KVnPXT9DuOjBxZPCXc98o7'
+
 export const JOB_TYPES = [
   { value: 'practica', label: 'Práctica' },
   { value: 'primer-empleo', label: 'Primer empleo' },
