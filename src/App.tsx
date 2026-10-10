@@ -13,6 +13,10 @@ import Actas from './pages/Actas'
 import BecasFeucCs from './pages/BecasFeucCs'
 import Cabildos from './pages/Cabildos'
 import PresupuestosParticipativos from './pages/PresupuestosParticipativos'
+import Empleos from './pages/Empleos'
+import EmpleoDetalle from './pages/EmpleoDetalle'
+import PublicarEmpleo from './pages/PublicarEmpleo'
+import AdminEmpleos from './pages/AdminEmpleos'
 
 function App() {
   return (
@@ -27,6 +31,10 @@ function App() {
         <Route path="/becas-feuc-cs" element={<BecasFeucCs />} />
         <Route path="/cabildos" element={<Cabildos />} />
         <Route path="/presupuestos-participativos" element={<PresupuestosParticipativos />} />
+        <Route path="/empleos" element={<Empleos />} />
+        <Route path="/empleos/publicar" element={<PublicarEmpleo />} />
+        <Route path="/empleos/admin" element={<AdminEmpleos />} />
+        <Route path="/empleos/:slug" element={<EmpleoDetalle />} />
         <Route path="/representacion" element={<Representacion />} />
         <Route path="/archivo" element={<Archivo />} />
         <Route path="/contacto" element={<Contacto />} />

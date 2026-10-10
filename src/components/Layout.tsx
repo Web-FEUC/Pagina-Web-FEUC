@@ -111,7 +111,9 @@ export default function Layout({ children }: LayoutProps) {
                   key={item.label}
                   to={item.path}
                   className={`whitespace-nowrap rounded-full px-2.5 py-1.5 transition hover:bg-primary/15 hover:text-secondary ${
-                    location.pathname === item.path ? 'bg-primary/20 text-secondary' : ''
+                    location.pathname === item.path || location.pathname.startsWith(`${item.path}/`)
+                      ? 'bg-primary/20 text-secondary'
+                      : ''
                   }`}
                 >
                   {item.label}
@@ -159,7 +161,7 @@ export default function Layout({ children }: LayoutProps) {
                     key={item.label}
                     to={item.path}
                     className={`rounded-xl px-3 py-2 text-base font-semibold transition ${
-                      location.pathname === item.path
+                      location.pathname === item.path || location.pathname.startsWith(`${item.path}/`)
                         ? 'bg-primary/20 text-secondary'
                         : 'text-slate-700 hover:bg-primary/15 hover:text-secondary'
                     }`}
@@ -245,6 +247,7 @@ export default function Layout({ children }: LayoutProps) {
                   <Link to="/quienes-somos" className="font-semibold text-primary hover:underline">Quiénes Somos</Link>
                   <Link to="/transparencia" className="font-semibold text-primary hover:underline">Transparencia</Link>
                   <Link to="/cabildos" className="font-semibold text-primary hover:underline">Cabildos</Link>
+                  <Link to="/empleos" className="font-semibold text-primary hover:underline">Empleos</Link>
                   <Link to="/presupuestos-participativos" className="font-semibold text-primary hover:underline">Presupuestos participativos</Link>
                   <Link to="/representacion" className="font-semibold text-primary hover:underline">Representación</Link>
                   <Link to="/contacto" className="font-semibold text-primary hover:underline">Contacto</Link>
