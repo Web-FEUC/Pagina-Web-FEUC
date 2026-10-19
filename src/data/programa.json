@@ -458,8 +458,8 @@
     "id": 66,
     "name": "Memoria a través del periodismo",
     "description": "Se buscará, en conjunto con la facultad de periodismo, hacer una recopilación de escritos, diarios, revistas y otros textos de estudiantes de nuestra universidad para hacer una exposición sobre la perspectiva de nuestros compañeros en la época de dictadura civico -militar, recalcando el valor de la información y la libre expresión .",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "no-logrado",
+    "statusRaw": "no logrado"
   },
   {
     "id": 67,
