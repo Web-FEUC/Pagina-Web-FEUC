@@ -1,10 +1,10 @@
 import projectsJson from './programa.json' with { type: 'json' }
 
 export const PROGRAMA_STATUSES = [
-  { value: 'logrado', label: 'Logrado', color: '#053333' },
-  { value: 'logrado-adaptaciones', label: 'Logrado con adaptaciones', color: '#8DE09C' },
-  { value: 'avances', label: 'En avance', color: '#FCC216' },
-  { value: 'no-logrado', label: 'No logrado', color: '#E5562A' },
+  { value: 'logrado', label: 'Logrado', shortLabel: 'Logrado', color: '#053333' },
+  { value: 'logrado-adaptaciones', label: 'Logrado con adaptaciones', shortLabel: 'Adaptado', color: '#8DE09C' },
+  { value: 'avances', label: 'En avance', shortLabel: 'Avance', color: '#FCC216' },
+  { value: 'no-logrado', label: 'No logrado', shortLabel: 'Pendiente', color: '#E5562A' },
 ] as const
 
 export type ProgramaStatus = (typeof PROGRAMA_STATUSES)[number]['value']
