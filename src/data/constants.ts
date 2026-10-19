@@ -1,6 +1,7 @@
 export const navLinks = [
   { label: 'Directiva', path: '/directiva' },
   { label: 'Quiénes Somos', path: '/quienes-somos' },
+  { label: 'Programa', path: '/programa' },
   { label: 'Transparencia', path: '/transparencia' },
   { label: 'Cabildos', path: '/cabildos' },
   { label: 'Empleos', path: '/empleos' },

@@ -17,6 +17,7 @@ import Empleos from './pages/Empleos'
 import EmpleoDetalle from './pages/EmpleoDetalle'
 import PublicarEmpleo from './pages/PublicarEmpleo'
 import AdminEmpleos from './pages/AdminEmpleos'
+import Programa from './pages/Programa'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/directiva" element={<Directiva />} />
         <Route path="/consejeria-superior" element={<ConsejeriaSuperior />} />
         <Route path="/quienes-somos" element={<QuienesSomos />} />
+        <Route path="/programa" element={<Programa />} />
         <Route path="/transparencia" element={<Transparencia />} />
         <Route path="/actas" element={<Actas />} />
         <Route path="/becas-feuc-cs" element={<BecasFeucCs />} />
