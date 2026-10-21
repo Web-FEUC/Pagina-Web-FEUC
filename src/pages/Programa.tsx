@@ -119,7 +119,7 @@ export default function Programa() {
               <div>
                 <p className="text-sm font-semibold text-ink">{stats.logradoPct}% ya está logrado</p>
                 <p className="mt-1 text-sm leading-relaxed text-slate-600">
-                  {stats.logrado} de {stats.total} proyectos cumplidos, con o sin adaptaciones.
+                  {stats.logrado} de {stats.total} proyectos cumplidos (con o sin adaptaciones, o incluidos en el P.E.).
                 </p>
               </div>
               <div className="h-2 overflow-hidden rounded-full bg-slate-100">
