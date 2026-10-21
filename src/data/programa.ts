@@ -5,8 +5,8 @@ export const PROGRAMA_STATUSES = [
   { value: 'logrado-adaptaciones', label: 'Logrado con adaptaciones', shortLabel: 'Adaptado', color: '#8DE09C' },
   {
     value: 'inclusion-pe',
-    label: 'Inclusión en el P.E.',
-    shortLabel: 'P.E.',
+    label: 'Inclusión en el Plan Estratégico UC',
+    shortLabel: 'Plan Estratégico UC',
     color: '#2F6B5A',
   },
   { value: 'avances', label: 'En avance', shortLabel: 'Avance', color: '#FCC216' },
