@@ -32,3 +32,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@keyframes empleos-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.empleos-marquee {
+  animation: empleos-marquee 48s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .empleos-marquee {
+    animation: none;
+  }
+}
+
