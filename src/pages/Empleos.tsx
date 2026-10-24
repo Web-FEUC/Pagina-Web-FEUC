@@ -60,8 +60,8 @@ export default function Empleos() {
   const [loadError, setLoadError] = useState('')
 
   usePageMeta(
-    'Empleos FEUC | Oportunidades para estudiantes UC',
-    'Encuentra prácticas, trabajos y oportunidades profesionales para estudiantes y recién egresados de la Universidad Católica.',
+    'Empleos FEUC | Piloto en preparación',
+    'Estamos construyendo Empleos FEUC. Mientras tanto, únete a los canales de WhatsApp y Telegram para enterarte de oportunidades.',
   )
 
   useEffect(() => {
@@ -103,47 +103,60 @@ export default function Empleos() {
 
   return (
     <section className="py-10">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <a
-          href={EMPLEOS_WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => track('empleos_join_whatsapp')}
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
-        >
-          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-            <path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.44 0 .07 5.37.07 11.97c0 2.11.55 4.17 1.6 6L0 24l6.2-1.62a11.94 11.94 0 0 0 5.84 1.49h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-1.25-6.21-3.5-8.42ZM12.05 21.85h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.68.96.98-3.58-.24-.37a9.88 9.88 0 0 1-1.52-5.3c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.91a9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.87-9.96 9.87Zm5.44-7.4c-.3-.15-1.76-.87-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z" />
-          </svg>
-          Unirse a WhatsApp
-        </a>
-        <a
-          href={EMPLEOS_TELEGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => track('empleos_join_telegram')}
-          className="inline-flex items-center justify-center gap-2 rounded-full border border-secondary/20 bg-white px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
-        >
-          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-            <path d="M21.5 3.1 2.7 10.3c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 11.2-7.1c.5-.3 1-.1.6.2l-9 8.2-.3 4.8c.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.2-.5-1.8-1.6-1.4Z" />
-          </svg>
-          Unirse a Telegram
-        </a>
-      </div>
-
-      <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div className="max-w-2xl">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Empleos FEUC</p>
-          <h1 className="mt-2 text-3xl font-semibold text-ink md:text-4xl">Encuentra tu próxima oportunidad</h1>
-          <p className="mt-3 text-sm text-slate-600 md:text-base">
-            Prácticas, trabajos y oportunidades para estudiantes y recién egresados UC.
-          </p>
+      <div className="mx-auto max-w-2xl text-center">
+        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">Empleos FEUC</p>
+        <p className="mt-3 inline-flex rounded-full bg-accent/20 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-secondary">
+          Piloto · Coming soon
+        </p>
+        <h1 className="mt-4 text-3xl font-semibold text-ink md:text-4xl">Estamos armando este espacio</h1>
+        <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+          Empleos FEUC sigue en construcción. Estamos trabajando para lanzar una plataforma clara y útil
+          para prácticas, trabajos y primeras oportunidades. Quédate atento: muy pronto habrá novedades.
+        </p>
+        <p className="mt-5 text-sm font-medium text-ink">
+          Mientras tanto, únete a los canales donde ya compartimos oportunidades:
+        </p>
+        <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+          <a
+            href={EMPLEOS_WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => track('empleos_join_whatsapp')}
+            className="inline-flex min-w-[12.5rem] items-center justify-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+          >
+            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <path d="M20.52 3.48A11.86 11.86 0 0 0 12.04 0C5.44 0 .07 5.37.07 11.97c0 2.11.55 4.17 1.6 6L0 24l6.2-1.62a11.94 11.94 0 0 0 5.84 1.49h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-1.25-6.21-3.5-8.42ZM12.05 21.85h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.68.96.98-3.58-.24-.37a9.88 9.88 0 0 1-1.52-5.3c0-5.46 4.45-9.9 9.92-9.9 2.65 0 5.14 1.03 7.01 2.91a9.84 9.84 0 0 1 2.9 7c0 5.46-4.45 9.87-9.96 9.87Zm5.44-7.4c-.3-.15-1.76-.87-2.03-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.11 3.22 5.11 4.51.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z" />
+            </svg>
+            WhatsApp
+          </a>
+          <a
+            href={EMPLEOS_TELEGRAM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => track('empleos_join_telegram')}
+            className="inline-flex min-w-[12.5rem] items-center justify-center gap-2 rounded-full border border-secondary/20 bg-white px-5 py-2.5 text-sm font-semibold text-secondary transition hover:bg-secondary/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+          >
+            <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <path d="M21.5 3.1 2.7 10.3c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 11.2-7.1c.5-.3 1-.1.6.2l-9 8.2-.3 4.8c.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.6c.3-1.2-.5-1.8-1.6-1.4Z" />
+            </svg>
+            Telegram
+          </a>
         </div>
         <Link
           to="/empleos/publicar"
-          className="inline-flex shrink-0 items-center justify-center rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+          className="mt-6 inline-flex text-sm font-semibold text-secondary hover:underline"
         >
-          Publica una oportunidad
+          ¿Quieres adelantar una oportunidad? Escríbenos acá →
         </Link>
+      </div>
+
+      <div className="mt-12 border-t border-slate-200 pt-8">
+        <div className="mx-auto max-w-2xl text-center sm:text-left">
+          <h2 className="text-lg font-semibold text-ink">Vista previa del listado</h2>
+          <p className="mt-1 text-sm text-slate-600">
+            Contenido de prueba mientras termina el piloto. Las ofertas oficiales llegarán con el lanzamiento.
+          </p>
+        </div>
       </div>
 
       <label className="mt-8 block">
