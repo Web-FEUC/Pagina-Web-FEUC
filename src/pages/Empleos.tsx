@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import JobCard from '../components/empleos/JobCard'
 import JobFilters, { emptyFilters, type JobFilterState } from '../components/empleos/JobFilters'
 import { usePageMeta } from '../lib/usePageMeta'
-import { getPublicJobs } from '../lib/empleosStore'
+import { loadPublicJobs } from '../lib/empleosStore'
 import { track } from '../lib/track'
 import {
   EMPLEOS_TELEGRAM_URL,
@@ -54,6 +54,10 @@ function sortJobs(jobs: JobOpportunity[], sort: JobFilterState['sort']) {
 export default function Empleos() {
   const [filters, setFilters] = useState<JobFilterState>(emptyFilters)
   const [filtersOpen, setFiltersOpen] = useState(false)
+  const [jobs, setJobs] = useState<JobOpportunity[]>([])
+  const [loading, setLoading] = useState(true)
+  const [source, setSource] = useState<'api' | 'local'>('api')
+  const [loadError, setLoadError] = useState('')
 
   usePageMeta(
     'Empleos FEUC | Oportunidades para estudiantes UC',
@@ -62,9 +66,23 @@ export default function Empleos() {
 
   useEffect(() => {
     track('empleos_visit')
+    let cancelled = false
+    ;(async () => {
+      try {
+        const result = await loadPublicJobs()
+        if (cancelled) return
+        setJobs(result.jobs)
+        setSource(result.source)
+      } catch (err) {
+        if (!cancelled) setLoadError(err instanceof Error ? err.message : 'No se pudieron cargar las ofertas.')
+      } finally {
+        if (!cancelled) setLoading(false)
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
   }, [])
-
-  const jobs = useMemo(() => getPublicJobs(), [])
 
   const results = useMemo(() => sortJobs(jobs.filter((job) => matches(job, filters)), filters.sort), [jobs, filters])
 
@@ -159,7 +177,17 @@ export default function Empleos() {
         </aside>
 
         <div>
-          {results.length === 0 ? (
+          {source === 'local' && (
+            <p className="mb-4 rounded-2xl bg-accent/15 px-4 py-3 text-sm text-secondary">
+              Modo local: mostrando datos de este navegador porque la API aún no está disponible.
+            </p>
+          )}
+          {loadError && (
+            <p className="mb-4 rounded-2xl bg-coral/10 px-4 py-3 text-sm text-coral">{loadError}</p>
+          )}
+          {loading ? (
+            <p className="rounded-2xl bg-white p-8 text-sm text-slate-600 shadow-card">Cargando oportunidades…</p>
+          ) : results.length === 0 ? (
             <div className="rounded-2xl bg-white p-8 text-center shadow-card">
               <p className="text-lg font-semibold text-ink">No encontramos oportunidades con estos filtros.</p>
               <button

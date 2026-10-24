@@ -4,6 +4,7 @@ import {
   JOB_CAREERS,
   JOB_EXPERIENCE,
   JOB_MODALITIES,
+  JOB_ORG_TYPES,
   JOB_SCHEDULES,
   JOB_TYPES,
   emptyJobDraft,
@@ -18,9 +19,10 @@ const fieldClass =
 interface JobFormProps {
   initial?: JobDraft
   submitLabel: string
-  onSubmit: (draft: JobDraft) => void
+  onSubmit: (draft: JobDraft) => void | Promise<void>
   requireAuthorization?: boolean
   showDemoNote?: boolean
+  busy?: boolean
 }
 
 export default function JobForm({
@@ -29,17 +31,19 @@ export default function JobForm({
   onSubmit,
   requireAuthorization = false,
   showDemoNote = false,
+  busy = false,
 }: JobFormProps) {
-  const [draft, setDraft] = useState<JobDraft>(initial ?? emptyJobDraft)
+  const [draft, setDraft] = useState<JobDraft>({ ...emptyJobDraft, ...initial, orgType: initial?.orgType || 'empresa', compensation: initial?.compensation || '' })
   const [authorized, setAuthorized] = useState(false)
   const [error, setError] = useState('')
+  const [submitting, setSubmitting] = useState(false)
 
   const update = (patch: Partial<JobDraft>) => setDraft((current) => ({ ...current, ...patch }))
 
   const toggleValue = <T extends string>(list: T[], value: T) =>
     list.includes(value) ? list.filter((item) => item !== value) : [...list, value]
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: FormEvent) => {
     event.preventDefault()
     if (!draft.title.trim() || !draft.company.trim() || !draft.contactName.trim() || !draft.contactEmail.trim()) {
       setError('Completa al menos cargo, organización, nombre y correo de contacto.')
@@ -47,6 +51,10 @@ export default function JobForm({
     }
     if (!draft.description.trim() || !draft.applicationUrl.trim()) {
       setError('La descripción y el link de postulación son obligatorios.')
+      return
+    }
+    if (draft.description.trim().length < 80) {
+      setError('La descripción debe tener al menos 80 caracteres.')
       return
     }
     if (draft.areas.length === 0) {
@@ -62,14 +70,21 @@ export default function JobForm({
       return
     }
     setError('')
-    onSubmit(draft)
+    setSubmitting(true)
+    try {
+      await onSubmit(draft)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'No se pudo enviar la oportunidad.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   return (
     <form onSubmit={handleSubmit} className="space-y-8">
       {showDemoNote && (
         <p className="rounded-2xl bg-accent/15 px-4 py-3 text-sm text-secondary">
-          Las ofertas enviadas quedan pendientes de revisión. FEUC las publica después de validarlas.
+          Tras enviar, te pediremos verificar tu correo. Luego evaluamos la publicación automáticamente y FEUC interviene solo si hace falta.
         </p>
       )}
 
@@ -78,6 +93,20 @@ export default function JobForm({
         <label className="block text-sm font-semibold text-ink">
           Nombre de la organización
           <input className={fieldClass} value={draft.company} onChange={(event) => update({ company: event.target.value })} required />
+        </label>
+        <label className="block text-sm font-semibold text-ink">
+          Tipo de organización
+          <select
+            className={fieldClass}
+            value={draft.orgType || 'empresa'}
+            onChange={(event) => update({ orgType: event.target.value })}
+          >
+            {JOB_ORG_TYPES.map((item) => (
+              <option key={item.value} value={item.value}>
+                {item.label}
+              </option>
+            ))}
+          </select>
         </label>
         <label className="block text-sm font-semibold text-ink">
           Nombre de la persona responsable
@@ -209,12 +238,21 @@ export default function JobForm({
           <input className={fieldClass} value={draft.location} onChange={(event) => update({ location: event.target.value })} required />
         </label>
         <label className="block text-sm font-semibold text-ink">
+          Remuneración (opcional)
+          <input
+            className={fieldClass}
+            value={draft.compensation || ''}
+            onChange={(event) => update({ compensation: event.target.value })}
+            placeholder="Ej. $450.000 brutos / a convenir"
+          />
+        </label>
+        <label className="block text-sm font-semibold text-ink">
           Fecha límite
           <input type="date" className={fieldClass} value={draft.deadline} onChange={(event) => update({ deadline: event.target.value })} />
         </label>
         <label className="block text-sm font-semibold text-ink">
-          Link de postulación
-          <input className={fieldClass} value={draft.applicationUrl} onChange={(event) => update({ applicationUrl: event.target.value })} placeholder="https://" required />
+          Link o correo de postulación
+          <input className={fieldClass} value={draft.applicationUrl} onChange={(event) => update({ applicationUrl: event.target.value })} placeholder="https:// o correo@" required />
         </label>
       </fieldset>
 
@@ -235,9 +273,10 @@ export default function JobForm({
 
       <button
         type="submit"
-        className="w-full rounded-2xl bg-secondary px-5 py-3 text-sm font-semibold text-white transition hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+        disabled={busy || submitting}
+        className="w-full rounded-2xl bg-secondary px-5 py-3 text-sm font-semibold text-white transition hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary disabled:opacity-60"
       >
-        {submitLabel}
+        {busy || submitting ? 'Enviando…' : submitLabel}
       </button>
     </form>
   )

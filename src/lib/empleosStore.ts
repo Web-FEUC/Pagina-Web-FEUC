@@ -1,7 +1,9 @@
 import { effectiveStatus, slugify, type JobDraft, type JobOpportunity, type JobStatus } from '../data/empleos'
 import { DEMO_JOBS } from '../data/empleosSeed'
+import { fetchPublicJob, fetchPublicJobs, isApiUnavailableError, submitJob } from './empleosApi'
 
 const STORAGE_KEY = 'feuc-empleos-v1'
+const USE_LOCAL_FALLBACK = import.meta.env.VITE_EMPLEOS_LOCAL_FALLBACK === 'true' || import.meta.env.DEV
 
 function nowIso() {
   return new Date().toISOString()
@@ -32,7 +34,11 @@ function readJobs(): JobOpportunity[] {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(DEMO_JOBS))
       return DEMO_JOBS
     }
-    return parsed
+    return parsed.map((job) => ({
+      ...job,
+      orgType: job.orgType || 'empresa',
+      compensation: job.compensation || '',
+    }))
   } catch {
     return DEMO_JOBS
   }
@@ -41,6 +47,55 @@ function readJobs(): JobOpportunity[] {
 function writeJobs(jobs: JobOpportunity[]) {
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(jobs))
   return jobs
+}
+
+/** Public jobs: API first; local demos only as DEV fallback. */
+export async function loadPublicJobs(): Promise<{ jobs: JobOpportunity[]; source: 'api' | 'local' }> {
+  try {
+    const jobs = await fetchPublicJobs()
+    return { jobs, source: 'api' }
+  } catch (err) {
+    if (USE_LOCAL_FALLBACK && isApiUnavailableError(err)) {
+      return {
+        jobs: readJobs().filter((job) => effectiveStatus(job) === 'published'),
+        source: 'local',
+      }
+    }
+    throw err
+  }
+}
+
+export async function loadPublicJob(slug: string): Promise<JobOpportunity | null> {
+  try {
+    return await fetchPublicJob(slug)
+  } catch (err) {
+    if (USE_LOCAL_FALLBACK) {
+      const job = readJobs().find((item) => item.slug === slug)
+      if (job && effectiveStatus(job) === 'published') return job
+      if (isApiUnavailableError(err)) return null
+    }
+    return null
+  }
+}
+
+export async function submitOpportunity(draft: JobDraft) {
+  try {
+    return await submitJob(draft)
+  } catch (err) {
+    if (USE_LOCAL_FALLBACK && isApiUnavailableError(err)) {
+      const saved = saveJobLocal({ ...draft, status: 'pending_verification' })
+      return {
+        ok: true,
+        id: saved.id,
+        slug: saved.slug,
+        status: saved.status,
+        message:
+          'Modo local: la API no está disponible. La oferta quedó guardada solo en este navegador (sin verificación ni IA).',
+        local: true as const,
+      }
+    }
+    throw err
+  }
 }
 
 export function getJobs() {
@@ -55,7 +110,7 @@ export function getPublicJobs() {
   return readJobs().filter((job) => effectiveStatus(job) === 'published')
 }
 
-export function saveJob(draft: JobDraft, options?: { publish?: boolean }) {
+export function saveJobLocal(draft: JobDraft, options?: { publish?: boolean }) {
   const jobs = readJobs()
   const timestamp = nowIso()
   const existing = draft.id ? jobs.find((job) => job.id === draft.id) : undefined
@@ -67,6 +122,7 @@ export function saveJob(draft: JobDraft, options?: { publish?: boolean }) {
     company: draft.company.trim(),
     companyLogo: draft.companyLogo.trim(),
     companyWebsite: draft.companyWebsite.trim(),
+    orgType: (draft.orgType || 'empresa').trim(),
     description: draft.description.trim(),
     responsibilities: draft.responsibilities.trim(),
     requirements: draft.requirements.trim(),
@@ -78,6 +134,7 @@ export function saveJob(draft: JobDraft, options?: { publish?: boolean }) {
     modality: draft.modality,
     location: draft.location.trim(),
     schedule: draft.schedule,
+    compensation: (draft.compensation || '').trim(),
     applicationUrl: draft.applicationUrl.trim(),
     deadline: draft.deadline,
     contactName: draft.contactName.trim(),
@@ -85,19 +142,19 @@ export function saveJob(draft: JobDraft, options?: { publish?: boolean }) {
     contactPhone: draft.contactPhone.trim(),
     status,
     isDemo: existing?.isDemo ?? false,
-    publishedAt:
-      status === 'published'
-        ? existing?.publishedAt || timestamp
-        : existing?.publishedAt ?? '',
+    publishedAt: status === 'published' ? existing?.publishedAt || timestamp : existing?.publishedAt ?? '',
     createdAt: existing?.createdAt ?? timestamp,
     updatedAt: timestamp,
   }
 
-  const nextJobs = existing
-    ? jobs.map((job) => (job.id === existing.id ? next : job))
-    : [next, ...jobs]
+  const nextJobs = existing ? jobs.map((job) => (job.id === existing.id ? next : job)) : [next, ...jobs]
   writeJobs(nextJobs)
   return next
+}
+
+/** @deprecated prefer saveJobLocal or API admin actions */
+export function saveJob(draft: JobDraft, options?: { publish?: boolean }) {
+  return saveJobLocal(draft, options)
 }
 
 export function setJobStatus(id: string, status: JobStatus) {

@@ -23,6 +23,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Andina Labs',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Startup de tecnología educativa busca una persona para apoyar el crecimiento comercial en universidades. Oportunidad interdisciplinaria: productos, clientes y narrativa de impacto.',
     responsibilities:
@@ -55,6 +57,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Núcleo Bienestar UC',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Apoyo en un estudio sobre bienestar estudiantil. Trabajo con encuestas, entrevistas y sistematización cualitativa.',
     responsibilities:
@@ -87,6 +91,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Fundación Barrio Vivo',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Rediseño de una plataforma para organizaciones vecinales. Buscamos alguien que combine investigación con prototipos claros.',
     responsibilities:
@@ -119,6 +125,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Agencia Sur',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Cobertura de cultura, ciudad y juventudes. Redacción, redes y apoyo en pauta diaria.',
     responsibilities:
@@ -151,6 +159,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Ciudad Justa',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Think tank busca apoyo para un proyecto de vivienda y participación municipal. Primer empleo con mentoría.',
     responsibilities:
@@ -183,6 +193,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Colegio Los Olivos',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Acompañamiento de talleres extraescolares de lectura, ciencia y arte para enseñanza básica.',
     responsibilities:
@@ -215,6 +227,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Observatorio Climático',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Análisis de datos ambientales abiertos para reportes de comunas. Combina programación, territorio y comunicación pública.',
     responsibilities:
@@ -247,6 +261,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Clínica Jurídica Abierta',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Apoyo en orientación jurídica inicial y sistematización de casos. Voluntariado profesional con supervisión de abogados.',
     responsibilities:
@@ -279,6 +295,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Orquesta Juvenil del Sur',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Comunicación digital de conciertos, talleres y audiciones. Buscamos alguien que ame la música y sepa contar historias.',
     responsibilities:
@@ -311,6 +329,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Salud Digital Andes',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Programa de 12 meses para recién egresados en producto, operaciones clínicas y experiencia de pacientes.',
     responsibilities:
@@ -343,6 +363,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Laboratorio Cívico',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description:
       'Práctica para cualquier carrera: investigación, diseño de servicios públicos y facilitación de talleres ciudadanos.',
     responsibilities:
@@ -375,6 +397,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Fondo del Maipo',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description: 'Oferta de prueba vencida. Debe aparecer solo en administración como vencida, no en el listado público.',
     responsibilities: 'Apoyo en reportes y análisis de cartera.',
     requirements: 'Excel intermedio.',
@@ -404,6 +428,8 @@ export const DEMO_JOBS: JobOpportunity[] = [
     company: 'Plataforma Vecinas',
     companyLogo: '',
     companyWebsite: 'https://example.com',
+    orgType: 'empresa',
+    compensation: '',
     description: 'Oferta de prueba en estado pendiente. Sirve para probar el flujo de aprobación de FEUC.',
     responsibilities: 'Entrevistar vecinas y sintetizar hallazgos.',
     requirements: 'Interés en territorio y métodos cualitativos.',

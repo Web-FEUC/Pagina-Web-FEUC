@@ -72,12 +72,25 @@ export const JOB_SCHEDULES = [
   { value: 'por-horas', label: 'Por horas' },
 ] as const
 
+export const JOB_ORG_TYPES = [
+  { value: 'empresa', label: 'Empresa' },
+  { value: 'startup', label: 'Startup' },
+  { value: 'fundacion', label: 'Fundación / ONG' },
+  { value: 'universidad', label: 'Universidad / centro académico' },
+  { value: 'gobierno', label: 'Sector público' },
+  { value: 'otro', label: 'Otro' },
+] as const
+
 export const JOB_STATUSES = [
   { value: 'draft', label: 'Borrador' },
   { value: 'pending', label: 'Pendiente' },
+  { value: 'pending_verification', label: 'Esperando verificación' },
+  { value: 'under_review', label: 'En revisión' },
+  { value: 'needs_correction', label: 'Requiere correcciones' },
   { value: 'published', label: 'Publicada' },
   { value: 'rejected', label: 'Rechazada' },
   { value: 'expired', label: 'Vencida' },
+  { value: 'unpublished', label: 'Retirada' },
 ] as const
 
 export type JobType = (typeof JOB_TYPES)[number]['value']
@@ -86,6 +99,7 @@ export type JobCareer = (typeof JOB_CAREERS)[number]['value']
 export type JobModality = (typeof JOB_MODALITIES)[number]['value']
 export type JobExperience = (typeof JOB_EXPERIENCE)[number]['value']
 export type JobSchedule = (typeof JOB_SCHEDULES)[number]['value']
+export type JobOrgType = (typeof JOB_ORG_TYPES)[number]['value']
 export type JobStatus = (typeof JOB_STATUSES)[number]['value']
 
 export interface JobOpportunity {
@@ -95,6 +109,7 @@ export interface JobOpportunity {
   company: string
   companyLogo: string
   companyWebsite: string
+  orgType: string
   description: string
   responsibilities: string
   requirements: string
@@ -106,12 +121,23 @@ export interface JobOpportunity {
   modality: JobModality
   location: string
   schedule: JobSchedule
+  compensation: string
   applicationUrl: string
   deadline: string
   contactName: string
   contactEmail: string
   contactPhone: string
+  contactVerified?: boolean
   status: JobStatus
+  approvalMethod?: string
+  reviewReasons?: string[]
+  aiResult?: {
+    summary?: string
+    recommendation?: string
+    confidence?: number
+    riskSignals?: string[]
+    reviewReasons?: string[]
+  } | null
   isDemo: boolean
   publishedAt: string
   createdAt: string
@@ -209,6 +235,7 @@ export const emptyJobDraft: JobDraft = {
   company: '',
   companyLogo: '',
   companyWebsite: '',
+  orgType: 'empresa',
   description: '',
   responsibilities: '',
   requirements: '',
@@ -220,10 +247,20 @@ export const emptyJobDraft: JobDraft = {
   modality: 'hibrido',
   location: '',
   schedule: 'part-time',
+  compensation: '',
   applicationUrl: '',
   deadline: '',
   contactName: '',
   contactEmail: '',
   contactPhone: '',
-  status: 'pending',
+  status: 'pending_verification',
+}
+
+export function isPendingReviewStatus(status: JobStatus | string) {
+  return (
+    status === 'pending' ||
+    status === 'pending_verification' ||
+    status === 'under_review' ||
+    status === 'needs_correction'
+  )
 }
