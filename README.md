@@ -16,11 +16,14 @@ La publicación real usa **Cloudflare Pages Functions + D1**, evaluación con **
 
 ### 1. Base de datos D1
 
+Sin D1 configurada, el sitio front despliega igual; las rutas `/api/empleos*` responderán error hasta crear la base.
+
 ```bash
+npx wrangler login
 npx wrangler d1 create feuc-empleos
 ```
 
-Copia el `database_id` a `wrangler.toml`. Luego:
+Copia el `database_id` a `wrangler.toml` (descomenta el bloque `[[d1_databases]]`). Luego:
 
 ```bash
 npm run db:migrate:local
