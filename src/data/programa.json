@@ -52,8 +52,8 @@
     "id": 8,
     "name": "Feria de Sexualidad Responsable",
     "description": "Realizar una feria semestral con organizaciones externas y propias de la UC para promover una sexualidad sana e informada, acercando el tema a la cotidianidad estudiantil.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 9,
@@ -73,8 +73,8 @@
     "id": 11,
     "name": "Campaña de salud sexual no heterosexual (campaña de concientización y formación)",
     "description": "La salud sexual lamentablemente no es una temática abordada con la debida detención y profundidad en nuestra formación en general, y esta realidad es aún más alarmante para las disidencias sexuales, ya que muy rara vez se integran el gran espectro de probl emáticas particulares que implican la salud sexual no heterosexual. Es en este contexto que proponemos una campaña de concientización y formación de salud sexual no heterosexual para nuestra comunidad universitaria en la que entregaremos información sobre el tema por nuestras redes sociales y generaremos espacios de discusión con activistas y expertos .",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 12,
@@ -115,8 +115,8 @@
     "id": 17,
     "name": "Revista Mosaico",
     "description": "Buscamos actualizar y revitalizar la revista, otorgándole una identidad propia a través de una línea editorial característica. Mediante la digitalización de esta, se creará un espacio que dará voz a las expresiones artísticas, culturales y debates de inter és levantados desde la comunidad UC. Queremos que Mosaico sea una plataforma de publicación de ilustraciones, fotografías, poesías, entrevistas, y ensayos; dichas expresiones representan las diversas miradas de nuestra comunidad y necesitan un lugar donde ser expuestas.",
-    "status": "logrado-adaptaciones",
-    "statusRaw": "logrado con adaptaciones"
+    "status": "logrado",
+    "statusRaw": "logrado sin adaptaciones"
   },
   {
     "id": 18,
@@ -150,15 +150,15 @@
     "id": 22,
     "name": "Concursos artísticos",
     "description": "Comprendiendo a las artes como un gran espectro de disciplinas, buscamos potenciar diversas áreas con fin de incentivar la participación e involucramiento en temas de artes y cultura en la UC, que al mismo tiempo construyan un relato colectivo sobre las viv encias y la realidad de estudiar en la UC, por ejemplo: UC en 100 palabras, UC en fotografías análogas, Lo Contador en Croquis, etc. Ciclo de talleres textiles: mediante las técnicas textiles como la costura y la indumentaria generaremos espacios de creación para fomentar la sustentabilidad en la moda, mediante el upcycling y el aprendizaje de técnicas para realizar prendas y ropa sustentable. Estos espacios tambi én funcionarán como lugares de encuentro y creación colectiva y colaborativa.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 23,
     "name": "Exposición itinerante sobre Historia de la FEUC",
     "description": "En colaboración con el Archivo FEUC y la Vocalía de Memoria, proponemos realizar una exposición permanente que recorra los campus de la Universidad dando a conocer la historia de la Federación de Estudiantes y del movimiento estudiantil en la UC, con materi al documental y audiovisual de distintas épocas históricas, recorriendo los principales hitos de la federación y sus luchas, contribuyendo a preservar y difundir la memoria histórica.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 24,
@@ -213,15 +213,15 @@
     "id": 31,
     "name": "Puntos de agua en canchas de San Joaquín",
     "description": "Instalar puntos de agua cerca de las diferentes áreas deportivas que ofrece el campus San Joaqu ín, facilitando la hidratación del estudiando y ahorros importantes de tiempo y traslados.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "inclusion-pe",
+    "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
     "id": 32,
     "name": "Puntos de deporte en CC, Oriente, LC y Villarica",
     "description": "Generar nuevos espacios deportivos en los distintos campus, acercando el deporte a todos los estudiantes UC. Remodelar el Gimnasio de San Joaquín , hacerlo más grande y más moderno. Los cupos no dan. Además de crear un espacio tipo gimnasio en cada campus",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "inclusion-pe",
+    "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
     "id": 33,
@@ -248,15 +248,15 @@
     "id": 36,
     "name": "Liga de futbol de carreras /territorios",
     "description": "Crearemos un torneo semestral de fútbol 11 y fútbol 7 en San Joaquín , inspirado en la liga de la USACH y la Major League, en el que participen carreras y territorios de todos los campus. La liga contará con categorías masculina, femenina y mixta, fomentando la transversalidad, la inclusión y la competitividad.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 37,
     "name": "Ampliar y Remodelar la sala de pesas de SJ",
     "description": "Este campus alberga a más de 25.000 estudiantes, pero la sala de pesas no responde a esa demanda. Proponemos renovar máquinas y equipamiento, además de ampliar las instalaciones para aumentar los cupos disponibles en cada módulo. Hacer deporte es fundamental para nuestro bienestar y los estudiantes de la UC merecen un espacio a la altura. Que exista una enfermería en cada campus mínimo y agregando una más",
-    "status": "avances",
-    "statusRaw": "logrado avances"
+    "status": "inclusion-pe",
+    "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
     "id": 38,
@@ -275,7 +275,7 @@
   {
     "id": 40,
     "name": "Capacitación en primeros auxilios para docentes y funcionarios",
-    "description": "Capacitar a docentes y funcionarios en primeros auxilios psicológicos, buscando entregar herramientas para que la respuesta ante situaciones complejas emocionalmente sea adecuada. Talleres de Primeros Auxilios Psicológicos y prevención de suicidio para",
+    "description": "Capacitar a docentes y funcionarios en primeros auxilios psicológicos, buscando entregar herramientas para que la respuesta ante situaciones complejas emocionalmente sea adecuada.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
@@ -353,8 +353,8 @@
     "id": 51,
     "name": "La UC emprende",
     "description": "Son muchos los estudiantes de la universidad que con sus manos han decidido levantar emprendimientos y pequeños negocios, por esto, queremos generar un espacio al estilo feria el primer martes de cada mes (en distintos campus de la UC), que permita al estu diantado instalarse a vender y promocionar sus proyectos en un ambiente que cuente con música en vivo durante el almuerzo, convirtiendo los patios en un espacio relajado y amigable que permita el encuentro de la comunidad.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 52,
@@ -388,8 +388,8 @@
     "id": 56,
     "name": "Mejores puntos limpios",
     "description": "Iniciar un piloto con la Dirección de Sustentabilidad para que los puntos limpios incluyan contenedores para residuos no reciclables y evaluar otros factores para mejorar su utilización.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "avances",
+    "statusRaw": "logrado avances"
   },
   {
     "id": 57,
@@ -451,8 +451,8 @@
     "id": 65,
     "name": "Arte y letras en dictadura",
     "description": "Durante la conmemoración del 11 de septiembre, buscaremos destacar mediante una exposición muestras artísticas, tales como pinturas, poesía, escritos y otras formas de expresión artística que hayan sido creados en dictadura, rescatando especialmente el rol de la Facultad de Arte de nuestra universidad durante esta época.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 66,
@@ -548,9 +548,9 @@
   {
     "id": 79,
     "name": "Por el fin de la corporativización en la UC \"diagnóstico estructural de experiencia universitaria”",
-    "description": "Últimamente , profesores y trabajadores han advertido sobre la \"corporativización \" de la UC, adoptando valores empresariales como la \"productividad\" y \"hacer más con menos\". Esto perjudica la calidad de la enseñanza y el vínculo con el estudiantado. Es por esto que buscamos iniciar el fin a la corporativización, priorizando la educación de los estudiantes y un servicio de calidad por parte de nuestros profesores y trabajadores. Pero el inicio concreto de esto es hacer un diagnóstico todo el año sobre qué actitudes y condiciones se replican en los campus de la UC. Para iniciar una transf ormación profunda, es necesario estar seguros de qué es lo que está pasando.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "description": "Últimamente , profesores y trabajadores han advertido sobre la \"corporativización \" de la UC, adoptando valores empresariales como la \"productividad\" y \"hacer más con menos\". Esto perjudica la calidad de la enseñanza y el vínculo con el estudiantado. Es por esto que buscamos iniciar el fin a la corporativización, priorizando la educación de los estudiantes y un servicio de calidad por parte de nuestros profesores y trabajadores. Pero el inicio concreto de esto es hacer un diagnóstico todo el año sobre qué actitudes y condiciones se replican en los campus de la UC. Para iniciar una transformación profunda, es necesario estar seguros de qué es lo que está pasando.",
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 80,
@@ -591,8 +591,8 @@
     "id": 85,
     "name": "Pago de programas",
     "description": "En Lo Contador se vive una realidad en que muchos estudiantes deben pagar por los programas que deben usar para poder aprobar sus ramos. Es por esto que buscamos que la Universidad pague por estos programas, como ya se hace con algunos otros, para que los estudiantes no deban incurrir en gastos extra.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 86,
@@ -647,8 +647,8 @@
     "id": 93,
     "name": "Comisión Investigadora Educación No Sexista",
     "description": "Crear, junto con otras universidades del CONFECH, una comisión para evaluar el avance de las instituciones de educación superior en educación no sexista y generar insumos para futuras propuestas.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 94,
@@ -668,8 +668,8 @@
     "id": 96,
     "name": "Historia disidente",
     "description": "Realizar un trabajo transversal interdisciplinario en donde se rescate la historia de las disidencias sexuales y de género en Chile y en la UC. Visibilizar el hecho de que las disidencias siempre han existido y que su presencia no es antinatural ni ideológica, sino que natural, atemporal y parte importante de las sociedades humanas.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 97,
@@ -696,8 +696,8 @@
     "id": 100,
     "name": "Medidas para tutores legales y estudiantes en la fuerza laboral",
     "description": "Promoveremos distintas medidas que ayuden a alivianar la carga y resolver dificultades que enfrentan estudiantes insertos en el mundo laboral y/o que actualmente son tutores legales.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 101,
@@ -710,8 +710,8 @@
     "id": 102,
     "name": "Campaña contra la violencia verbal y el maltrato",
     "description": "Visibilizar y sensibilizar a la comunidad sobre situaciones cotidianas de violencia verbal y de trato, especialmente aquellas de carácter de género, que no deben normalizarse. Se impulsará con colaboración de las unidades académicas.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 103,
@@ -813,317 +813,317 @@
   },
   {
     "id": 117,
-    "name": "Extensión del beneficio a exámenes médicos",
-    "description": "Trabajar en la extensión y difusión del beneficio de exámenes de sangre gratuitos, especialmente para la detección de infecciones de transmisión sexual como el VIH, y colaborar con el Ministerio de Salud en campañas preventivas e informativas.",
-    "status": "no-logrado",
-    "statusRaw": "no logrado"
-  },
-  {
-    "id": 118,
     "name": "Extender los convenios para estudiantes con UC Christus",
     "description": "Se buscará extender los convenios que ya existen con la red UC Christus para ampliar el acceso de los estudiantes a una atención en salud oportuna.",
     "status": "inclusion-pe",
     "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
-    "id": 119,
+    "id": 118,
     "name": "Por la memoria de la Vicaría Raúl Silva Henríquez",
     "description": "Parte de la iglesia fue clave en la lucha por los d.d.h.h en el periodo de dictadura. Es por eso que buscaremos visibilizar el rol de la Vicaría Raúl Silva Henríquez, esto a través de un trabajo liderado por académic os y estudiantes de nuestra Universidad.",
-    "status": "logrado-adaptaciones",
-    "statusRaw": "logrado con adaptaciones"
+    "status": "no-logrado",
+    "statusRaw": "no logrado"
   },
   {
-    "id": 120,
+    "id": 119,
     "name": "Ceremonias y memoriales de reparación",
     "description": "Proponemos renombrar la sala Confucio en Oriente en nombre del artista detenido Ignacio González, manteniendo viva la memoria de nuestros compañeros y concientizando al estudiantado de los acontecimientos de la universidad en dictadura.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 121,
+    "id": 120,
     "name": "Congreso inter -universidades por la educación feminista y no -sexista",
     "description": "Realizar un congreso para dotar de contenido y definición a la demanda de una educación no sexista, elaborando un documento que enmarque la postura de la CONFECh.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "avances",
+    "statusRaw": "logrado avances"
   },
   {
-    "id": 122,
+    "id": 121,
     "name": "Escuela Sindical",
     "description": "La dirigencia sindical es una habilidad y forma de organización que no solo debe existir en la UC, sino que se debe esparcir en nuestro país. Hoy en día, los sindicatos no son bien valorados, a pesar de ser un medio esencial para mejorar las condiciones laborales y fomentar una colaboración y pertenencia crucial con los lugares de trabajo y empresas que contratan a las personas. Por eso mismo, vemos esencial, reconectar con el desarrollo de la Escuela Sindical, en conjunto con la Facultad de Derecho UC, pro poniendo cinco clases nuevas sobre temas actuales como feminismo, sustentabilidad, salud mental, democracia y derechos humanos, relacionados con el ámbito laboral -sindical. De esta forma, mediante una colaboración entre la universidad, los estudiantes y lo s sindicatos, es posible crear una nueva cultura responsable en el cuidado y promoción del trabajo como espacio vital del desarrollo colectivo y personal.",
     "status": "logrado-adaptaciones",
     "statusRaw": "logrado con adaptaciones"
   },
   {
-    "id": 123,
+    "id": 122,
     "name": "Memorial ex centro de tortura Venda Sexy",
     "description": "Trabajaremos con la Municipalidad de Macul para construir un memorial en el ex centro de tortura \"Venda Sexy\" para recordar los hechos y las víctimas , generando un espacio de reflexión y educación para el estudiantado y la ciudadaní a.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 124,
+    "id": 123,
     "name": "Feminismo, disidencia y memoria",
     "description": "En el contexto de la conmemoración del 11 de septiembre, se estudiará la memoria de la dictadura cívico militar desde el feminismo y las disidencias, donde se visibilizará la violencia sexual como método de tortura, discriminación y maltratos a disidencias , generando un espacio de reflexión y memoria para nuestro estudiantado",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "no-logrado",
+    "statusRaw": "no logrado"
   },
   {
-    "id": 125,
+    "id": 124,
     "name": "Convenios y participación activa en voluntariados externos",
     "description": "Pretendemos incentivar la participación en voluntariados, proyectándonos como una universidad involucrada con la contingencia y fomentando una mirada crítica antes las urgencias e injusticias sociales que aún persisten en nuestro país.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 126,
+    "id": 125,
     "name": "Placas de memoria",
     "description": "Se continuará trabajando por la instalación de placas de memoria en nuestra universidad, buscando incluir a todos nuestros compañeros y compañeras.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 127,
+    "id": 126,
     "name": "Reglamento para trabajadores",
     "description": "Proponemos crear un Reglamento para Trabajadores que establezca normas claras contra el acoso laboral y sexual, la discriminación y cualquier forma de violencia, además de procedimientos transparentes para denunciar y sancionar faltas éticas. Este reglamen to también explicará de forma sencilla contratos, beneficios y derechos laborales, convirtiéndose en una herramienta real de protección y dignidad para todas y todos quienes trabajan en la UC.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 128,
+    "id": 127,
     "name": "Defensoría Estudiantil también para trabajadores",
     "description": "La defensoría estudiantil es una institución autónoma que existe dentro de la UC que realiza un rol esencial en defender a los estudiantes frente a procedimientos dentro de Secretaría General. Sin embargo, vemos una clara falta de esta herramienta en el co ntexto de la vida de los trabajadores, haciendo que el Derecho y la defensa jurídica dentro de los espacios universitarios para ellos no exista del todo. Por eso mismo, proponemos como FEUC trabajar en conjunto con defensoría estudiantil UC para poder abri r un departamento dedicado exclusivamente a los trabajadores de la Universidad.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 129,
+    "id": 128,
     "name": "Catastro de estudiantes migrantes UC",
     "description": "Es vital mantener un continuo catastro de estudiantes migrantes, con el fin de hacer un seguimiento efectivo para asegurar una experiencia universitaria justa y de calidad.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 130,
+    "id": 129,
     "name": "Evaluación de la experiencia estudiantil con los servicios de salud mental que ofrece la universidad:",
     "description": "Llevaremos a cabo una evaluación de la experiencia de los estudiantes en los servicios que ofrece la universidad en torno al bienestar psicológico para así poder trabajar en modificaciones y nuevas propuestas.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 131,
+    "id": 130,
     "name": "Centro UC para la Migración",
     "description": "La migración es uno de los desafíos a los que nos enfrentamos como país en este momento, estando constantemente en el debate colectivo. Es por esto que buscaremos impulsar la creación de un Centro UC para la Migración que trabaje de forma interdisciplinar en torno al tema.",
-    "status": "inclusion-pe",
-    "statusRaw": "lograda la Inclusión en el P.E."
+    "status": "no-logrado",
+    "statusRaw": "no logrado"
   },
   {
-    "id": 132,
+    "id": 131,
     "name": "Agenda Abierta",
     "description": "Publicar de manera accesible la agenda de la directiva FEUC para que quede a disposición de toda la comunidad estudiantil.",
     "status": "logrado-adaptaciones",
     "statusRaw": "logrado con adaptaciones"
   },
   {
-    "id": 133,
+    "id": 132,
     "name": "Plataforma de Transparencia",
     "description": "Implementar un sitio en línea que permita supervisar en tiempo real el cumplimiento del programa y la ejecución del presupuesto.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 134,
+    "id": 133,
     "name": "Norma de Transparencia",
     "description": "Diseñar un protocolo que regule la transparencia tanto en la federación como en otros organismos estudiantiles.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 135,
+    "id": 134,
     "name": "Transparencia en la UC",
     "description": "Garantizar que la universidad entregue información abierta sobre finanzas, inversiones, actas del HCS y vínculos con empresas externas, para que toda la comunidad UC pueda acceder a la información y fiscalizar.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 136,
+    "id": 135,
     "name": "Endowment UC",
     "description": "Coherencia y transparencia: Desde hace algunos años la UC financia parte de su gestión a través del Endowment UC, un fondo patrimonial constituido con donaciones que se invierten para generar recursos futuros. Aunque esta herramienta es común en otras unive rsidades y puede ser positiva, su implementación en la UC ha carecido de transparencia. En otros contextos se ha detectado que fondos similares han invertido en empresas contrarias a principios éticos universitarios. Por ello, se debe exigir claridad abso luta respecto al origen de las donaciones, establecer criterios éticos para la inversión y terminar con proyectos que produzcan un fuerte impacto negativo en el medioambiente y la sociedad. Esta propuesta se trabajará en conjunto con la organización estudi antil La Raíz.",
     "status": "inclusion-pe",
     "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
-    "id": 137,
+    "id": 136,
     "name": "Mujeres Olvidadas por la UC",
     "description": "Realizaremos una intervención que consistirá en la investigación y posterior exposición de una línea temporal de nuestra Universidad y las mujeres que encabezaron diferentes procesos de esta. Se buscará que sea expuesta en todos los campus, logrando la vis ibilización de las mujeres de la comunidad UC.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 138,
+    "id": 137,
     "name": "Revisión de protocolos en la Universidad",
     "description": "Trabajar con Secretaría General en revisión de protocol os de violencia y la duración de estos procesos , para revisar una futura reforma al proceso interno de la Universidad. El debido proceso debe ser un derecho garantizado tanto en los tribunales del país como en las instancias internas de la UC.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 139,
+    "id": 138,
     "name": "Acuerdo LGBTIQ+ UC sin discriminaciones",
     "description": "Buscar un acuerdo con Secretaría General para estipular que la institución no sesgará actividades relacionadas con la comunidad LGBTIQ+, acompañado de una campaña de visibilización y un gran acuerdo liderado por la FEUC.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 140,
+    "id": 139,
     "name": "Instructivo de Nombre Social y respeto de la identidad de género",
     "description": "Buscaremos crear, junto a la institución de la UC, un instructivo de fácil acceso, que permita que personas trans o no binarias que estudian o trabajan en la UC puedan utilizar su nombre social en registros, documentos y comunicaciones verbales y escritas p ara efectos internos, en ámbitos curriculares, extracurriculares y laborales.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
-  },
-  {
-    "id": 141,
-    "name": "Compromiso Anti -Discursos de Odio en el Aula",
-    "description": "De la mano con otros estamentos de la UC, impulsaremos la redacción y firma de un compromiso de repudio y erradicación a los discursos de odio hacia la comunidad, que constituyen un atropello a su dignidad humana e identidad.",
     "status": "logrado-adaptaciones",
     "statusRaw": "logrado con adaptaciones"
   },
   {
-    "id": 142,
+    "id": 140,
+    "name": "Compromiso Anti -Discursos de Odio en el Aula",
+    "description": "De la mano con otros estamentos de la UC, impulsaremos la redacción y firma de un compromiso de repudio y erradicación a los discursos de odio hacia la comunidad, que constituyen un atropello a su dignidad humana e identidad.",
+    "status": "avances",
+    "statusRaw": "logrado avances"
+  },
+  {
+    "id": 141,
     "name": "Ruta no vidente",
     "description": "Buscaremos mejorar y ampliar la ruta para gente no vidente, asegurándonos que todo espacio UC forme parte de esta ruta, con especial enfoque en que se permita el traslado simple y seguro para los estudiantes que lo necesite, promoviendo el desarrollo pleno e inclusión en la universidad. Inclusión",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 143,
+    "id": 142,
     "name": "Salas PIANE",
     "description": "Una sala de clases debe favorecer y promover el aprendizaje de todos, por lo cual proponemos facilitar la programación de cursos de forma que se puedan identificar la aptitud de las salas para acoger estudiantes con problemas de movilidad, visión, audición , entre otros. Sumado a esto también revisar si existen complicaciones de acceso a estas salas para identificarlas y resolverlas. Además del compromiso para trabajar en pos de que todas las salas de la UC sean igual de inclusivas.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 144,
+    "id": 143,
     "name": "Asistencia flexible para mapadres",
     "description": "Buscaremos un sistema transversal para madres y padres estudiantes UC para justificar inasistencias a clases y evaluaciones en situaciones cuando les sea necesario ausentarse por obligaciones relacionadas el cuidado de sus hijxs, siempre con el certificado médico o de centros educacionales correspondientes.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
-    "id": 145,
+    "id": 144,
     "name": "Mudadores sin sexismo",
     "description": "Proponemos ampliar las zonas de campus cuyos baños tengan acceso a mudadores, con presencia tanto en baños masculinos, femeninos como universales, dejando atrás los sesgos y promoviendo la corresponsabilidad",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 146,
+    "id": 145,
     "name": "Se es madre/padre más de 2 años",
     "description": "Actualmente, la inmensa mayoría de beneficios para mapadres son hasta que sus hijes cumplen 2 años de edad : beneficios económicos, educacionales y de toma de ramos. Sólo unos pocos beneficios se extienden hasta los 12 años, tales como una mejor posición en el banner al inicio del plan de estudios. Propondremos que todos los beneficios de mapadres sean exigible s más allá de los 2 años del niño/a, idealmente hasta igualar los 12 años.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
-    "id": 147,
+    "id": 146,
     "name": "Supervisión de la unidad de Violencia de Género",
     "description": "Establecer mecanismos de evaluación y fiscalización del trabajo de la Unidad de Violencia de Género, garantizando su eficacia y cumplimiento de objetivos.",
     "status": "inclusion-pe",
     "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
-    "id": 148,
+    "id": 147,
     "name": "Visibilización de técnicos y carreras técnicas",
     "description": "Se señala la falta de espacio para personas con títulos técnicos y la invalidación de su visión, a pesar de su experiencia. Implementaremos talleres conjuntos, eventos de integración y reconocimiento mutuo de experiencias, permitiendo que estudiantes y egr esados de D UOC participen en instancias universitarias académicas, recreativas .",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 149,
+    "id": 148,
     "name": "Plan de construcción de residencias estudiantiles dentro de la UC",
     "description": "Hoy en día ser estudiante de una región distinta a la metropolitana agrega miles de preocupaciones y responsabilidades adicionales más que el solo hecho de estudiar. Por ello mismo, creemos que la FEUC debe tomar un rol crucial en impulsar la construcción, en conjunto con la Universidad, de residencias estudiantiles gratuitas para estudiantes de regiones lejanas. Esto ayudará a acortar brechas en la experiencia universitaria de, a mejorar notablemente la calidad de vida de esos estudiantes y al mismo tiempo crear y potenciar un ambiente nuevo de comunidad dentro de la Universidad.",
     "status": "inclusion-pe",
     "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
-    "id": 150,
+    "id": 149,
     "name": "Protocolo para actividades masivas",
     "description": "Elaborar un protocolo para actividades masivas que aborde la prevención de violencia sexual, sustentabilidad y respeto a trabajadores, con campañas de concientización ajustadas a realidades locales. Reconocemos una necesidad de suma prioridad en hacer sent ir segura y respaldada a toda la comunidad UC y creemos que establecer estos protocolos brinda una estabilidad institucional que a la larga acaba por enriquecer a nuestra universidad y todos sus miembros.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "avances",
+    "statusRaw": "logrado avances"
   },
   {
-    "id": 151,
+    "id": 150,
     "name": "Baja de arancel por TAV",
     "description": "En conjunto a la consejería superior entendemos que el derecho a la educación debe contemplar todos los períodos de estudio, incluyendo la temporada académica de verano, proponemos evaluar en conjunto con la Vicerrectoría Económica un monto proporcional al arancel del TAV con el fin de facilitar su acceso a todos los miembros del estudiantado y que estos puedan proliferar en su vida académica sin el perjuicio de atrasarse en el estudio de su carrera.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 152,
+    "id": 151,
     "name": "Financiamiento para actividades curriculares que requieran financiamiento",
     "description": "Si bien la gratuidad ha traído mayor diversidad, también ha generado desincentivos inesperados . Se da el ejemplo de la orquesta sinfónica de estudiantes, que se \"destruyó\" porque, al ser la educación gratuita, se eliminó el incentivo de las becas para participar. Consideramos de suma relevancia que los estudiantes puedan formar parte activa de UC y desarrollarse en diversos ámbitos más allá de lo estrictamente académico.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 153,
+    "id": 152,
     "name": "Beca de transporte para prácticas",
     "description": "Considerando el uso limitado que tiene la TNE con el estudiante que se encuentra en vías de iniciarse profesionalmente, proponemos la incorporación de becas de transporte para aquellos miembros de la comunidad UC que se encuentren realizando una práctica p rofesional necesaria para la formalización de sus estudios en conjunto con la Universidad.",
     "status": "logrado",
     "statusRaw": "logrado sin adaptaciones"
   },
   {
-    "id": 154,
+    "id": 153,
     "name": "Seguro por robo",
     "description": "Proyecto que destina una fracción del arancel a la conformación de un fondo común, cuyo objetivo es brindar apoyo económico en caso de sufrir un robo. El mecanismo funciona bajo la lógica de mutualidad, donde todos aportan para protegerse colectivamente frente a este riesgo. De esta forma, se ofrece tranquilidad, respaldo financiero y un sistema simple y transparente de compensación que beneficia a toda la comunidad participante.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 155,
+    "id": 154,
     "name": "Promover la sindicalización a los académicos",
     "description": "Que actualmente en la Universidad a un académico se le quite sus “asignaciones de desempeño académico” (beneficios económicos que se sumen al sueldo de los profesores) sólo por el hecho de sindicalizarse es inaceptable. Ello es la muestra de una estructura universitaria que castiga la organización en pos del bienestar y que promueve una cultura del miedo a la denuncia y a la cooperación real. Por ello mismo, creemos que la FEUC debe promover la sindicalización de los académicos para que en conjunto con los trabajadores de administración y profesionales puedan generar petitorios integrales y exigir mejoras en sus condiciones laborales.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 156,
+    "id": 155,
     "name": "“Muestren los resultados”: Campaña de visibilización sobre la realidad laboral en la UC y nuestra responsabilidad:",
     "description": "Hoy en día, si los profesores y trabajadores solicitan ver los resultados de las encuestas laborales, la universidad hace oídos sordos y no los muestran. Esto fomenta un ambiente de falta de transparencia, verdad y de retroalimentación, que dificulta cada vez más una mejora real para las condiciones de trabajo que tienen los académicos y los administrativos. Por ello, desde la FEUC se tomarán todos los esfuerzos para hacer que la universidad muestre los resultados de las encuestas de ambiente laboral en tod as las facultades, y con ello, realizar una campaña informativa para visibilizar las vulneraciones laborales, la importancia del subcontrato y la responsabilidad de los estudiantes en los abusos contra los trabajadores.",
     "status": "no-logrado",
     "statusRaw": "no logrado"
   },
   {
-    "id": 157,
+    "id": 156,
     "name": "Revocación Doctor Honoris Causa al Almirante Jorge Swett",
     "description": "En conjunto a otras luchas, continuaremos visibilizando en la comunidad UC y exigiendo a Rectoría que revoque el Doctor Honoris Causa al Almirante Jorge Swett, por su rol cómplice en la dictadura cívico militar.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 158,
+    "id": 157,
     "name": "Perdón Institucional",
     "description": "Nuestra Universidad tuvo un rol cómplice y colaborador con la dictadura cívico militar, hasta el día de hoy nuestra universidad no ha reconocido su rol durante esta época. Es por eso que seguiremos luchando para que la universidad finalmente reconozca su r esponsabilidad y pida perdón de forma pública. Capacitaciones con perspectiva de género a académicos, supervisores y",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 159,
+    "id": 158,
     "name": "Capacitaciones con perspectiva de género a académicos, supervisores y funcionarios:",
     "description": "Actualmente la UC no está cumpliendo la obligación legal de realizar capacitaciones contra la violencia de género de manera triestamental. Por ello, para hacer que se cumpla la ley y sobre todo para empezar a generar una cultura del cuidado y el respeto en tre todas y todos los integrantes de la comunidad universitaria, se hace necesario armar capacitaciones para sensibilizar sobre igualdad, no discriminación de género, acoso laboral y corresponsabilidad parental en los procesos de selección y contratación; y hacer que estas sean obligatorias en todas las facultades y plantas de la Universidad.",
-    "status": "no-logrado",
-    "statusRaw": "no logrado"
+    "status": "inclusion-pe",
+    "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
-    "id": 160,
+    "id": 159,
     "name": "Red de estudiantes contra el endeudamiento en la UC",
     "description": "Crear una red con doble función: orientar a estudiantes con problemas de crédito y deuda (incluyendo asesoría jurídica) y articular una demanda política contra el endeudamiento.",
     "status": "avances",
     "statusRaw": "logrado avances"
   },
   {
-    "id": 161,
+    "id": 160,
     "name": "Revista Colectiva por la Memoria en la UC",
     "description": "Se hará una revista física semestral que recoja perspectivas, obras, vivencias e iniciativas desde distintas áreas disciplinares y experiencias sobre lo que es hacer Memoria en la UC. La convocatoria estará abierta a estudiantes, académicos, trabajadores y alumni de la universidad ; recogerá tanto obras académicas como artísticas y testimonios .",
     "status": "no-logrado",
     "statusRaw": "no logrado"
+  },
+  {
+    "id": 161,
+    "name": "Escuela de Memoria y Derechos Humanos",
+    "description": "Se le dará continuidad al proyecto buscando seguir creando espacios de reflexión en torno a la dictadura, los derechos humanos y el rol que ha tenido la UC en relación a estos .",
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   }
 ]
