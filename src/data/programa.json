@@ -80,8 +80,8 @@
     "id": 12,
     "name": "Encuentro Universitario",
     "description": "Reivindicar la importancia del Encuentro Universitario, realizando pre -encuentros por campus para levantar temáticas de interés y elaborar diagnósticos, culminando en un Encuentro Universitario masivo con propuestas concretas en que participe toda la comunidad UC.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 13,
@@ -149,7 +149,7 @@
   {
     "id": 22,
     "name": "Concursos artísticos",
-    "description": "Comprendiendo a las artes como un gran espectro de disciplinas, buscamos potenciar diversas áreas con fin de incentivar la participación e involucramiento en temas de artes y cultura en la UC, que al mismo tiempo construyan un relato colectivo sobre las viv encias y la realidad de estudiar en la UC, por ejemplo: UC en 100 palabras, UC en fotografías análogas, Lo Contador en Croquis, etc. Ciclo de talleres textiles: mediante las técnicas textiles como la costura y la indumentaria generaremos espacios de creación para fomentar la sustentabilidad en la moda, mediante el upcycling y el aprendizaje de técnicas para realizar prendas y ropa sustentable. Estos espacios tambi én funcionarán como lugares de encuentro y creación colectiva y colaborativa.",
+    "description": "Comprendiendo a las artes como un gran espectro de disciplinas, buscamos potenciar diversas áreas con fin de incentivar la participación e involucramiento en temas de artes y cultura en la UC, que al mismo tiempo construyan un relato colectivo sobre las viv encias y la realidad de estudiar en la UC, por ejemplo: UC en 100 palabras, UC en fotografías análogas, Lo Contador en Croquis, etc.",
     "status": "logrado-adaptaciones",
     "statusRaw": "logrado con adaptaciones"
   },
@@ -234,8 +234,8 @@
     "id": 34,
     "name": "Corridas y Subidas a cerros",
     "description": "Promover instancias en que nos unamos como universidad para disfrutar el deporte, proponemos organizar corridas y subidas al cerro a lo largo del año donde fomentemos el valor del deporte en la vida universitaria",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 35,
@@ -283,8 +283,8 @@
     "id": 41,
     "name": "Taller de primeros auxilios psicológicos y prevención de suicidio para representantes",
     "description": "Considerando el rol que tienen los representantes estudiantiles dentro del estudiantado de su carrera y su territorio, se profundizará en los contenidos entregados por la DAE a comienzo de año sobre salud mental. Estas instancias buscan prepararlos para re accionar de forma adecuada y entregarles información para que puedan divulgar en sus carreras.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 42,
@@ -332,8 +332,8 @@
     "id": 48,
     "name": "Talleres de afichismo político",
     "description": "Impulsar talleres, workshops y un concurso para vincular la práctica artística con la valorización de la gráfica durante la dictadura, concientizando y abriendo una instancia de expresión y reflexión para el estudiantado. Generaremos talleres, workshops y otros tipos de instancias dónde promoveremos el vínculo del arte y sus diversas expresiones con la valorización de la gráfica durante la dictadura civil militar, concientizando y abriendo un lugar de expresión y reflexión para el estudiantado .",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 49,
@@ -409,15 +409,15 @@
     "id": 59,
     "name": "Sábado sustentable en Comunidad",
     "description": "Crearemos actividades de enfoque sustentable como capacitaciones de compostaje, talleres de biohuerto, reciclaje y foros sobre contaminación empresarial. Además de actividades de limpieza de distintos puntos de la ciudad.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 60,
     "name": "Abramos las puertas: involucrar a la comunidad y vecinos en una conciencia sustentable y saludable:",
     "description": "Organizar actividades y campañas para fomentar el uso de puntos limpios, incentivar el deporte y recuperar espacios comunes de barrios y plazas, evitando el uso de materiales de un solo uso, en el que se incluya a los vecinos de nuestros campus, colaborando con las Municipalidades correspondientes.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 61,
@@ -437,8 +437,8 @@
     "id": 63,
     "name": "Recepción de prendas",
     "description": "Campaña de recepción de prendas que serán donadas a una fundación para convertirlas en lana.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "avances",
+    "statusRaw": "logrado avances"
   },
   {
     "id": 64,
@@ -472,8 +472,8 @@
     "id": 68,
     "name": "Compromiso de la FEUC a 2 reuniones semestrales con los sindicatos",
     "description": "Creemos que todos quienes integran la universidad, son parte de una gran casa común y por ello mismo, todos tienen la misma e igual importancia. Sin embargo, muchas veces ello no se ve en las acciones cotidianas de las instituciones estudiantiles de la Uni versidad. Una observación interesante de los sindicatos es que señalan que muchos ex -líderes estudiantiles no se sindicalizan al convertirse en trabajadores de la UC, perdiendo la \"conciencia\" de la importancia de la sindicalización y la colaboración tries tamental. Por eso mismo, se propone tener mínimo 2 reuniones semestrales con todos los sindicatos de la Universidad, porque la mejora de las condiciones de todos en la UC debe partir con la creación de puentes entre estudiantes y otros estamentos como los trabajadores.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 69,
@@ -598,8 +598,8 @@
     "id": 86,
     "name": "InfracestrUCtura por Lo Contador",
     "description": "El estudiantado del campus ha señalado la necesidad de contar con más mesas de trabajo sucias —espacios adecuados para realizar maquetas, manualidades y proyectos prácticos — así como con lugares para comprar comida de manera accesible y conveniente. Buscamos responder a estas demandas generando infraestructura que facilite tanto el desarrollo académico como la vida cotidiana universitaria.",
-    "status": "avances",
-    "statusRaw": "logrado avances"
+    "status": "inclusion-pe",
+    "statusRaw": "lograda la Inclusión en el P.E."
   },
   {
     "id": 87,
@@ -829,8 +829,8 @@
     "id": 119,
     "name": "Ceremonias y memoriales de reparación",
     "description": "Proponemos renombrar la sala Confucio en Oriente en nombre del artista detenido Ignacio González, manteniendo viva la memoria de nuestros compañeros y concientizando al estudiantado de los acontecimientos de la universidad en dictadura.",
-    "status": "avances",
-    "statusRaw": "logrado avances"
+    "status": "no-logrado",
+    "statusRaw": "no logrado"
   },
   {
     "id": 120,
@@ -857,8 +857,8 @@
     "id": 123,
     "name": "Feminismo, disidencia y memoria",
     "description": "En el contexto de la conmemoración del 11 de septiembre, se estudiará la memoria de la dictadura cívico militar desde el feminismo y las disidencias, donde se visibilizará la violencia sexual como método de tortura, discriminación y maltratos a disidencias , generando un espacio de reflexión y memoria para nuestro estudiantado",
-    "status": "no-logrado",
-    "statusRaw": "no logrado"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 124,
@@ -1053,8 +1053,8 @@
     "id": 151,
     "name": "Financiamiento para actividades curriculares que requieran financiamiento",
     "description": "Si bien la gratuidad ha traído mayor diversidad, también ha generado desincentivos inesperados . Se da el ejemplo de la orquesta sinfónica de estudiantes, que se \"destruyó\" porque, al ser la educación gratuita, se eliminó el incentivo de las becas para participar. Consideramos de suma relevancia que los estudiantes puedan formar parte activa de UC y desarrollarse en diversos ámbitos más allá de lo estrictamente académico.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 152,
