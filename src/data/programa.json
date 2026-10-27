@@ -731,8 +731,8 @@
     "id": 105,
     "name": "Campaña integral contra la violencia sexual",
     "description": "Al inicio del año académico se desarrollará una campaña comunicacional dirigida a estudiantes nuevos/as, que incluirá afiches, charlas por facultad y materiales de difusión. Además, se implementará un taller online obligatorio sobre violencia sexual y de g énero para estudiantes de primer año, con el fin de educar, prevenir y evitar situaciones de acoso, abuso y violencia hacia mujeres y disidencias.",
-    "status": "logrado",
-    "statusRaw": "logrado sin adaptaciones"
+    "status": "logrado-adaptaciones",
+    "statusRaw": "logrado con adaptaciones"
   },
   {
     "id": 106,
